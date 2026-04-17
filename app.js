@@ -733,7 +733,12 @@ function getItalianVoice() {
   return voice || null;
 }
 
-function initVoices() {
+function initVoices() {  
+  showVoiceActionButtons({
+  canTest: false,
+  canInstallHelp: false
+});
+  
   if (!("speechSynthesis" in window)) {
     setNoVoiceState("Synthèse vocale non disponible sur ce navigateur.");
     return;
@@ -817,7 +822,11 @@ function setNoVoiceState(message) {
   els.voiceSelect.value = "";
   els.voiceStatus.textContent = message;
   els.voiceStatus.className = "small-text warning";
-  els.helpVoiceBtn.classList.remove("hidden");
+
+  showVoiceActionButtons({
+    canTest: false,
+    canInstallHelp: true
+  });
 }
 
 function getSelectedItalianVoice() {
@@ -847,7 +856,11 @@ function updateVoiceStatus() {
 
   els.voiceStatus.textContent = `Voix sélectionnée : ${selectedVoice.name} (${selectedVoice.lang}).`;
   els.voiceStatus.className = "small-text success";
-  els.helpVoiceBtn.classList.add("hidden");
+
+  showVoiceActionButtons({
+    canTest: true,
+    canInstallHelp: false
+  });
 }
 
 function speakItalian(text) {
@@ -869,6 +882,26 @@ function speakItalian(text) {
 
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(utterance);
+}
+
+function showVoiceActionButtons({ canTest, canInstallHelp }) {
+  if (canTest) {
+    els.testSelectedVoiceBtn.classList.remove("hidden");
+  } else {
+    els.testSelectedVoiceBtn.classList.add("hidden");
+  }
+
+  if (canInstallHelp) {
+    els.helpVoiceBtn.classList.remove("hidden");
+  } else {
+    els.helpVoiceBtn.classList.add("hidden");
+  }
+}
+
+function hasDetectedItalianVoice() {
+  return availableVoices.some(
+    (voice) => voice.lang && voice.lang.toLowerCase().startsWith("it")
+  );
 }
 
 function detectEnvironment() {
