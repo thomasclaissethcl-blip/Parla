@@ -1,0 +1,24 @@
+{
+  "pathways": [
+    {
+      "id": "tourisme",
+      "title": "Tourisme",
+      "description": "Se débrouiller en voyage, à l’hôtel, au restaurant, dans les transports et dans la ville."
+    },
+    {
+      "id": "rencontres",
+      "title": "Rencontrer quelqu’un",
+      "description": "Se présenter, parler de soi, proposer une activité, comprendre et prolonger une interaction."
+    },
+    {
+      "id": "culture",
+      "title": "Conversation culture",
+      "description": "Parler de musique, de cinéma, d’histoire, de lecture et de patrimoine avec un vocabulaire progressif."
+    },
+    {
+      "id": "politique",
+      "title": "Conversation politique",
+      "description": "Comprendre et discuter d’institutions, de débats publics et de sujets de société en italien."
+    }
+  ]
+}
