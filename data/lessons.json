@@ -1,70 +1,584 @@
-[
-  {
-    "id": "basics-1",
-    "title": "Saluer et se présenter",
-    "description": "Apprenez à dire bonjour, au revoir et à vous présenter simplement.",
-    "difficulty": "Débutant",
-    "xp": 40,
-    "expressions": [
-      {"it": "Ciao", "fr": "Salut", "phonetic": "tchao", "example": "Ciao, come stai ?"},
-      {"it": "Buongiorno", "fr": "Bonjour", "phonetic": "bouon-djor-no", "example": "Buongiorno, signora."},
-      {"it": "Mi chiamo Luca", "fr": "Je m'appelle Luca", "phonetic": "mi kia-mo lou-ka", "example": "Mi chiamo Luca e sono francese."},
-      {"it": "Piacere", "fr": "Enchanté", "phonetic": "pia-tché-ré", "example": "Piacere di conoscerti."}
-    ],
-    "practice": [
-      {"prompt": "Traduisez en italien : Bonjour", "answer": "buongiorno"},
-      {"prompt": "Traduisez en italien : Je m'appelle Anna", "answer": "mi chiamo anna"}
-    ]
-  },
-  {
-    "id": "basics-2",
-    "title": "Les nombres et les achats simples",
-    "description": "Compter, demander un prix et acheter quelque chose.",
-    "difficulty": "Débutant",
-    "xp": 50,
-    "expressions": [
-      {"it": "uno, due, tre", "fr": "un, deux, trois", "phonetic": "ou-no, dou-é, tré", "example": "Vorrei tre caffè."},
-      {"it": "Quanto costa ?", "fr": "Combien cela coûte-t-il ?", "phonetic": "kouan-to ko-sta", "example": "Quanto costa questo panino ?"},
-      {"it": "Vorrei un caffè", "fr": "Je voudrais un café", "phonetic": "vor-réï oun kaf-fè", "example": "Vorrei un caffè, per favore."},
-      {"it": "Per favore", "fr": "S'il vous plaît", "phonetic": "pèr fa-vo-ré", "example": "Un biglietto, per favore."}
-    ],
-    "practice": [
-      {"prompt": "Traduisez en italien : Combien cela coûte-t-il ?", "answer": "quanto costa"},
-      {"prompt": "Traduisez en italien : Je voudrais un café", "answer": "vorrei un caffè", "altAnswers": ["vorrei un caffe"]}
-    ]
-  },
-  {
-    "id": "travel-1",
-    "title": "Se déplacer en ville",
-    "description": "Demander son chemin, comprendre une direction et parler des transports.",
-    "difficulty": "Intermédiaire",
-    "xp": 60,
-    "expressions": [
-      {"it": "Dov'è la stazione ?", "fr": "Où est la gare ?", "phonetic": "do-vè la sta-tsio-né", "example": "Scusi, dov'è la stazione ?"},
-      {"it": "A destra / a sinistra", "fr": "À droite / à gauche", "phonetic": "a dè-stra / a si-ni-stra", "example": "Il museo è a sinistra."},
-      {"it": "Prendo l'autobus", "fr": "Je prends le bus", "phonetic": "prèn-do lo-to-bous", "example": "Prendo l'autobus numero 5."},
-      {"it": "È lontano ?", "fr": "C'est loin ?", "phonetic": "è lon-ta-no", "example": "Il centro è lontano ?"}
-    ],
-    "practice": [
-      {"prompt": "Traduisez en italien : Où est la gare ?", "answer": "dov'è la stazione", "altAnswers": ["dove e la stazione", "dove è la stazione"]},
-      {"prompt": "Traduisez en italien : À droite", "answer": "a destra"}
-    ]
-  },
-  {
-    "id": "social-1",
-    "title": "Parler de ses goûts",
-    "description": "Exprimer ses préférences et poser des questions simples sur les loisirs.",
-    "difficulty": "Intermédiaire",
-    "xp": 70,
-    "expressions": [
-      {"it": "Mi piace la musica", "fr": "J'aime la musique", "phonetic": "mi pia-tché la mou-zi-ka", "example": "Mi piace la musica italiana."},
-      {"it": "Non mi piace", "fr": "Je n'aime pas", "phonetic": "non mi pia-tché", "example": "Non mi piace il freddo."},
-      {"it": "Che cosa ti piace fare ?", "fr": "Qu'aimez-vous faire ?", "phonetic": "ké ko-za ti pia-tché fa-ré", "example": "Che cosa ti piace fare nel tempo libero ?"},
-      {"it": "Nel tempo libero", "fr": "Pendant le temps libre", "phonetic": "nèl tèm-po li-bè-ro", "example": "Nel tempo libero leggo."}
-    ],
-    "practice": [
-      {"prompt": "Traduisez en italien : J'aime la musique", "answer": "mi piace la musica"},
-      {"prompt": "Traduisez en italien : Je n'aime pas", "answer": "non mi piace"}
-    ]
-  }
-]
+{
+  "lessons": [
+    {
+      "id": "salutations-1",
+      "title": "Saluer et prendre congé",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Les formules indispensables pour commencer une interaction.",
+      "content": [
+        { "it": "ciao", "fr": "salut" },
+        { "it": "buongiorno", "fr": "bonjour" },
+        { "it": "buonasera", "fr": "bonsoir" },
+        { "it": "arrivederci", "fr": "au revoir" },
+        { "it": "a presto", "fr": "à bientôt" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « bonjour » en italien ?",
+          "options": ["buongiorno", "buonanotte", "grazie"],
+          "answer": "buongiorno"
+        },
+        {
+          "q": "Comment dit-on « au revoir » ?",
+          "options": ["prego", "arrivederci", "scusi"],
+          "answer": "arrivederci"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "decouverte", "order": 1 },
+        { "id": "rencontres", "stage": "decouverte", "order": 1 },
+        { "id": "culture", "stage": "decouverte", "order": 1 },
+        { "id": "politique", "stage": "decouverte", "order": 1 }
+      ]
+    },
+    {
+      "id": "politesse-1",
+      "title": "Politesse de base",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Remercier, demander pardon et répondre avec courtoisie.",
+      "content": [
+        { "it": "grazie", "fr": "merci" },
+        { "it": "prego", "fr": "je vous en prie" },
+        { "it": "scusi", "fr": "excusez-moi" },
+        { "it": "mi dispiace", "fr": "je suis désolé" },
+        { "it": "per favore", "fr": "s’il vous plaît" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « merci » ?",
+          "options": ["grazie", "prego", "scusi"],
+          "answer": "grazie"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "decouverte", "order": 2 },
+        { "id": "rencontres", "stage": "decouverte", "order": 2 },
+        { "id": "culture", "stage": "decouverte", "order": 2 },
+        { "id": "politique", "stage": "decouverte", "order": 2 }
+      ]
+    },
+    {
+      "id": "presentation-1",
+      "title": "Se présenter",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Dire son nom et lancer une première présentation.",
+      "content": [
+        { "it": "mi chiamo", "fr": "je m’appelle" },
+        { "it": "sono", "fr": "je suis" },
+        { "it": "piacere", "fr": "enchanté" },
+        { "it": "come ti chiami", "fr": "comment tu t’appelles" },
+        { "it": "come si chiama", "fr": "comment vous vous appelez" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « je m’appelle » ?",
+          "options": ["mi chiamo", "mi piace", "sto bene"],
+          "answer": "mi chiamo"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "decouverte", "order": 3 },
+        { "id": "tourisme", "stage": "apprentissage", "order": 5 },
+        { "id": "culture", "stage": "apprentissage", "order": 4 }
+      ]
+    },
+    {
+      "id": "etat-1",
+      "title": "Dire comment on va",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Exprimer un état simple et comprendre une réponse courante.",
+      "content": [
+        { "it": "come stai", "fr": "comment vas-tu" },
+        { "it": "come sta", "fr": "comment allez-vous" },
+        { "it": "sto bene", "fr": "je vais bien" },
+        { "it": "così così", "fr": "comme ci comme ça" },
+        { "it": "sto male", "fr": "je vais mal" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « sto bene » ?",
+          "options": ["je vais bien", "je suis italien", "je m’appelle"],
+          "answer": "je vais bien"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "apprentissage", "order": 4 },
+        { "id": "tourisme", "stage": "apprentissage", "order": 6 }
+      ]
+    },
+    {
+      "id": "cafe-1",
+      "title": "Commander un café",
+      "type": "scenario",
+      "difficulty": 1,
+      "description": "Gérer une interaction courte dans un café.",
+      "content": [
+        { "it": "un caffè", "fr": "un café" },
+        { "it": "vorrei", "fr": "je voudrais" },
+        { "it": "quanto costa", "fr": "combien cela coûte" },
+        { "it": "al banco", "fr": "au comptoir" },
+        { "it": "da portare via", "fr": "à emporter" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « je voudrais » ?",
+          "options": ["vorrei", "voglio", "vado"],
+          "answer": "vorrei"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "decouverte", "order": 3 },
+        { "id": "rencontres", "stage": "approfondissement", "order": 10 }
+      ]
+    },
+    {
+      "id": "restaurant-1",
+      "title": "Commander au restaurant",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Demander un plat, une boisson ou l’addition.",
+      "content": [
+        { "it": "il menù", "fr": "le menu" },
+        { "it": "vorrei ordinare", "fr": "je voudrais commander" },
+        { "it": "acqua naturale", "fr": "eau plate" },
+        { "it": "il conto", "fr": "l’addition" },
+        { "it": "senza glutine", "fr": "sans gluten" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « l’addition » ?",
+          "options": ["il conto", "il banco", "la stazione"],
+          "answer": "il conto"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "apprentissage", "order": 7 },
+        { "id": "rencontres", "stage": "approfondissement", "order": 11 }
+      ]
+    },
+    {
+      "id": "hotel-1",
+      "title": "À l’hôtel",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Réserver, arriver et demander des informations simples.",
+      "content": [
+        { "it": "una camera", "fr": "une chambre" },
+        { "it": "ho una prenotazione", "fr": "j’ai une réservation" },
+        { "it": "per due notti", "fr": "pour deux nuits" },
+        { "it": "la colazione", "fr": "le petit-déjeuner" },
+        { "it": "la chiave", "fr": "la clé" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « ho una prenotazione » ?",
+          "options": ["j’ai une réservation", "j’ai une chambre", "j’ai une valise"],
+          "answer": "j’ai une réservation"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "apprentissage", "order": 8 }
+      ]
+    },
+    {
+      "id": "transports-1",
+      "title": "Se déplacer en ville",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Prendre le train, le bus ou demander un itinéraire.",
+      "content": [
+        { "it": "la stazione", "fr": "la gare" },
+        { "it": "un biglietto", "fr": "un billet" },
+        { "it": "a che ora parte", "fr": "à quelle heure cela part" },
+        { "it": "dove si trova", "fr": "où cela se trouve" },
+        { "it": "andata e ritorno", "fr": "aller-retour" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « un billet » ?",
+          "options": ["un biglietto", "un conto", "una camera"],
+          "answer": "un biglietto"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "approfondissement", "order": 9 }
+      ]
+    },
+    {
+      "id": "ville-1",
+      "title": "Demander son chemin",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Comprendre les repères spatiaux les plus courants.",
+      "content": [
+        { "it": "a destra", "fr": "à droite" },
+        { "it": "a sinistra", "fr": "à gauche" },
+        { "it": "sempre dritto", "fr": "tout droit" },
+        { "it": "vicino", "fr": "près" },
+        { "it": "lontano", "fr": "loin" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « a sinistra » ?",
+          "options": ["à gauche", "à droite", "tout droit"],
+          "answer": "à gauche"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "approfondissement", "order": 10 }
+      ]
+    },
+    {
+      "id": "sorties-1",
+      "title": "Proposer une sortie",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Inviter quelqu’un à boire un verre ou à faire une activité.",
+      "content": [
+        { "it": "vuoi uscire", "fr": "tu veux sortir" },
+        { "it": "andiamo", "fr": "allons-y" },
+        { "it": "stasera", "fr": "ce soir" },
+        { "it": "domani", "fr": "demain" },
+        { "it": "con piacere", "fr": "avec plaisir" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « ce soir » ?",
+          "options": ["stasera", "adesso", "ieri"],
+          "answer": "stasera"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "apprentissage", "order": 5 }
+      ]
+    },
+    {
+      "id": "gouts-1",
+      "title": "Parler de ses goûts",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Exprimer ce qu’on aime et ce qu’on n’aime pas.",
+      "content": [
+        { "it": "mi piace", "fr": "j’aime" },
+        { "it": "non mi piace", "fr": "je n’aime pas" },
+        { "it": "adoro", "fr": "j’adore" },
+        { "it": "preferisco", "fr": "je préfère" },
+        { "it": "la musica", "fr": "la musique" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « je préfère » ?",
+          "options": ["preferisco", "capisco", "finisco"],
+          "answer": "preferisco"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "apprentissage", "order": 6 },
+        { "id": "culture", "stage": "decouverte", "order": 3 }
+      ]
+    },
+    {
+      "id": "famille-1",
+      "title": "Parler de sa famille",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Présenter quelques proches et situer les relations simples.",
+      "content": [
+        { "it": "la mia famiglia", "fr": "ma famille" },
+        { "it": "mio fratello", "fr": "mon frère" },
+        { "it": "mia sorella", "fr": "ma sœur" },
+        { "it": "i miei genitori", "fr": "mes parents" },
+        { "it": "sono sposato", "fr": "je suis marié" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « ma sœur » ?",
+          "options": ["mia sorella", "mio fratello", "mia madre"],
+          "answer": "mia sorella"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "approfondissement", "order": 7 }
+      ]
+    },
+    {
+      "id": "travail-1",
+      "title": "Parler de son travail",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Présenter son activité professionnelle et poser une question équivalente.",
+      "content": [
+        { "it": "che lavoro fai", "fr": "quel métier fais-tu" },
+        { "it": "lavoro in", "fr": "je travaille dans" },
+        { "it": "sono insegnante", "fr": "je suis enseignant" },
+        { "it": "ufficio", "fr": "bureau" },
+        { "it": "colleghi", "fr": "collègues" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « che lavoro fai » ?",
+          "options": ["quel métier fais-tu", "où habites-tu", "quel âge as-tu"],
+          "answer": "quel métier fais-tu"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "approfondissement", "order": 8 },
+        { "id": "politique", "stage": "apprentissage", "order": 4 }
+      ]
+    },
+    {
+      "id": "cinema-1",
+      "title": "Parler de cinéma",
+      "type": "culture",
+      "difficulty": 2,
+      "description": "Décrire des goûts simples et commenter un film.",
+      "content": [
+        { "it": "il cinema", "fr": "le cinéma" },
+        { "it": "un film", "fr": "un film" },
+        { "it": "l’attore", "fr": "l’acteur" },
+        { "it": "la regista", "fr": "la réalisatrice" },
+        { "it": "mi è piaciuto", "fr": "cela m’a plu" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « un film » ?",
+          "options": ["un film", "un libro", "una mostra"],
+          "answer": "un film"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "apprentissage", "order": 4 },
+        { "id": "rencontres", "stage": "maitrise", "order": 13 }
+      ]
+    },
+    {
+      "id": "musique-1",
+      "title": "Parler de musique",
+      "type": "culture",
+      "difficulty": 2,
+      "description": "Décrire un style musical ou un artiste apprécié.",
+      "content": [
+        { "it": "la musica classica", "fr": "la musique classique" },
+        { "it": "il jazz", "fr": "le jazz" },
+        { "it": "un cantante", "fr": "un chanteur" },
+        { "it": "un concerto", "fr": "un concert" },
+        { "it": "ascoltare", "fr": "écouter" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « ascoltare » ?",
+          "options": ["écouter", "regarder", "lire"],
+          "answer": "écouter"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "apprentissage", "order": 5 },
+        { "id": "rencontres", "stage": "maitrise", "order": 14 }
+      ]
+    },
+    {
+      "id": "livres-1",
+      "title": "Parler de lecture",
+      "type": "culture",
+      "difficulty": 3,
+      "description": "Commenter un livre ou un auteur de façon simple.",
+      "content": [
+        { "it": "un libro", "fr": "un livre" },
+        { "it": "uno scrittore", "fr": "un écrivain" },
+        { "it": "un romanzo", "fr": "un roman" },
+        { "it": "leggere", "fr": "lire" },
+        { "it": "interessante", "fr": "intéressant" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « lire » ?",
+          "options": ["leggere", "scrivere", "cantare"],
+          "answer": "leggere"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "approfondissement", "order": 6 }
+      ]
+    },
+    {
+      "id": "musees-1",
+      "title": "Parler de musée et patrimoine",
+      "type": "culture",
+      "difficulty": 3,
+      "description": "Décrire une visite culturelle et exprimer un avis.",
+      "content": [
+        { "it": "il museo", "fr": "le musée" },
+        { "it": "un’opera", "fr": "une œuvre" },
+        { "it": "la mostra", "fr": "l’exposition" },
+        { "it": "il patrimonio", "fr": "le patrimoine" },
+        { "it": "vale la pena", "fr": "cela vaut la peine" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « vale la pena » ?",
+          "options": ["cela vaut la peine", "c’est trop cher", "c’est très loin"],
+          "answer": "cela vaut la peine"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "approfondissement", "order": 7 },
+        { "id": "tourisme", "stage": "maitrise", "order": 12 }
+      ]
+    },
+    {
+      "id": "institutions-1",
+      "title": "Institutions et vie publique",
+      "type": "politique",
+      "difficulty": 3,
+      "description": "Découvrir le vocabulaire de base pour parler d’État et d’institutions.",
+      "content": [
+        { "it": "il governo", "fr": "le gouvernement" },
+        { "it": "il parlamento", "fr": "le parlement" },
+        { "it": "il presidente", "fr": "le président" },
+        { "it": "la legge", "fr": "la loi" },
+        { "it": "la politica", "fr": "la politique" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « la loi » ?",
+          "options": ["la legge", "la città", "la scuola"],
+          "answer": "la legge"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "decouverte", "order": 3 }
+      ]
+    },
+    {
+      "id": "debattre-1",
+      "title": "Exprimer un accord ou un désaccord",
+      "type": "politique",
+      "difficulty": 3,
+      "description": "Formuler un point de vue nuancé dans une conversation.",
+      "content": [
+        { "it": "sono d’accordo", "fr": "je suis d’accord" },
+        { "it": "non sono d’accordo", "fr": "je ne suis pas d’accord" },
+        { "it": "secondo me", "fr": "selon moi" },
+        { "it": "dipende", "fr": "cela dépend" },
+        { "it": "è complicato", "fr": "c’est compliqué" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « secondo me » ?",
+          "options": ["selon moi", "à cause de moi", "avec moi"],
+          "answer": "selon moi"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "apprentissage", "order": 5 },
+        { "id": "culture", "stage": "maitrise", "order": 10 },
+        { "id": "rencontres", "stage": "maitrise", "order": 12 }
+      ]
+    },
+    {
+      "id": "societe-1",
+      "title": "Parler de sujets de société",
+      "type": "politique",
+      "difficulty": 4,
+      "description": "Aborder l’éducation, le travail et les inégalités de manière simple.",
+      "content": [
+        { "it": "la scuola", "fr": "l’école" },
+        { "it": "il lavoro", "fr": "le travail" },
+        { "it": "la sanità", "fr": "la santé" },
+        { "it": "i diritti", "fr": "les droits" },
+        { "it": "le disuguaglianze", "fr": "les inégalités" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « les droits » ?",
+          "options": ["i diritti", "i doveri", "i salari"],
+          "answer": "i diritti"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "approfondissement", "order": 6 }
+      ]
+    },
+    {
+      "id": "argumenter-1",
+      "title": "Construire une opinion simple",
+      "type": "politique",
+      "difficulty": 4,
+      "description": "Relier une idée, un argument et une justification courte.",
+      "content": [
+        { "it": "penso che", "fr": "je pense que" },
+        { "it": "perché", "fr": "parce que" },
+        { "it": "da un lato", "fr": "d’un côté" },
+        { "it": "dall’altro lato", "fr": "de l’autre côté" },
+        { "it": "in generale", "fr": "en général" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « penso che » ?",
+          "options": ["je pense que", "je sais que", "je veux que"],
+          "answer": "je pense que"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "maitrise", "order": 7 },
+        { "id": "culture", "stage": "superlocuteur", "order": 12 }
+      ]
+    },
+    {
+      "id": "conversation-1",
+      "title": "Relancer une conversation",
+      "type": "conversation",
+      "difficulty": 3,
+      "description": "Maintenir l’échange avec des questions et relances naturelles.",
+      "content": [
+        { "it": "davvero", "fr": "vraiment" },
+        { "it": "interessante", "fr": "intéressant" },
+        { "it": "e tu", "fr": "et toi" },
+        { "it": "puoi spiegare", "fr": "peux-tu expliquer" },
+        { "it": "raccontami", "fr": "raconte-moi" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « et toi » ?",
+          "options": ["e tu", "con te", "tu sei"],
+          "answer": "e tu"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "maitrise", "order": 9 },
+        { "id": "culture", "stage": "maitrise", "order": 8 },
+        { "id": "politique", "stage": "approfondissement", "order": 8 }
+      ]
+    },
+    {
+      "id": "nuances-1",
+      "title": "Nuancer son propos",
+      "type": "conversation",
+      "difficulty": 4,
+      "description": "Éviter les réponses trop brutes et introduire des nuances.",
+      "content": [
+        { "it": "forse", "fr": "peut-être" },
+        { "it": "non sempre", "fr": "pas toujours" },
+        { "it": "in parte", "fr": "en partie" },
+        { "it": "più o meno", "fr": "plus ou moins" },
+        { "it": "dipende dal contesto", "fr": "cela dépend du contexte" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « forse » ?",
+          "options": ["peut-être", "toujours", "maintenant"],
+          "answer": "peut-être"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "superlocuteur", "order": 11 },
+        { "id": "politique", "stage": "superlocuteur", "order": 9 },
+        { "id": "rencontres", "stage": "superlocuteur", "order": 15 }
+      ]
+    }
+  ]
+}
