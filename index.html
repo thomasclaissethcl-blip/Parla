@@ -51,41 +51,61 @@
           </div>
         </section>
 
-        <section>
-          <h2>Mode d’apprentissage</h2>
-          <div class="mode-switch">
-            <button id="freeModeBtn" class="mode-btn active">À la carte</button>
-            <button id="pathModeBtn" class="mode-btn">Parcours</button>
-          </div>
-        </section>
+      <section class="collapsible-section collapsed">
+    <button class="collapse-toggle" type="button" aria-expanded="false">
+      <span>Voix italienne</span>
+      <span class="collapse-icon">▾</span>
+    </button>
+    <div class="collapse-content">
+      <div class="stack-actions">
+        <label for="voiceSelect" class="small-text">Choix de la voix</label>
+        <select id="voiceSelect" class="voice-select">
+          <option value="">Chargement des voix…</option>
+        </select>
+        <p id="voiceStatus" class="small-text">
+          Détection des voix en cours.
+        </p>
+        <button id="testSelectedVoiceBtn" class="secondary hidden">Tester la voix sélectionnée</button>
+        <button id="helpVoiceBtn" class="secondary hidden">Comment installer une nouvelle voix</button>
+      </div>
+    </div>
+  </section>
 
-        <section>
-  <h2>Voix italienne</h2>
-  <div class="stack-actions">
-    <label for="voiceSelect" class="small-text">Choix de la voix</label>
-    <select id="voiceSelect" class="voice-select">
-      <option value="">Chargement des voix…</option>
-    </select>
-    <p id="voiceStatus" class="small-text">
-      Détection des voix en cours.
-    </p>
-    <button id="testSelectedVoiceBtn" class="secondary">Tester la voix sélectionnée</button>
-    <button id="helpVoiceBtn" class="secondary hidden">Comment installer une nouvelle voix</button>
-  </div>
-</section>
+        <section class="collapsible-section collapsed">
+    <button class="collapse-toggle" type="button" aria-expanded="false">
+      <span>Mode d’apprentissage</span>
+      <span class="collapse-icon">▾</span>
+    </button>
+    <div class="collapse-content">
+      <div class="mode-switch">
+        <button id="freeModeBtn" class="mode-btn active">À la carte</button>
+        <button id="pathModeBtn" class="mode-btn">Parcours</button>
+      </div>
+    </div>
+  </section>
 
-        <section id="pathwaySection">
-          <h2>Parcours</h2>
-          <div id="pathwayList" class="pathway-list"></div>
-        </section>
+        <section id="pathwaySection" class="collapsible-section collapsed">
+    <button class="collapse-toggle" type="button" aria-expanded="false">
+      <span>Parcours</span>
+      <span class="collapse-icon">▾</span>
+    </button>
+    <div class="collapse-content">
+      <div id="pathwayList" class="pathway-list"></div>
+    </div>
+  </section>
 
-        <section>
-          <h2>Stage actuel</h2>
-          <div id="currentStageCard" class="stage-card">
-            <strong id="currentStageLabel">Libre</strong>
-            <p id="currentStageDescription">Vous choisissez vos leçons librement.</p>
-          </div>
-        </section>
+        <section class="collapsible-section collapsed">
+    <button class="collapse-toggle" type="button" aria-expanded="false">
+      <span>Stage actuel</span>
+      <span class="collapse-icon">▾</span>
+    </button>
+    <div class="collapse-content">
+      <div id="currentStageCard" class="stage-card">
+        <strong id="currentStageLabel">Libre</strong>
+        <p id="currentStageDescription">Vous choisissez vos leçons librement.</p>
+      </div>
+    </div>
+  </section>
 
         <section>
           <h2>Sauvegarde</h2>
