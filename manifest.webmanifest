@@ -1,11 +1,12 @@
 {
-  "name": "Parla — apprendre l'italien",
+  "name": "Parla",
   "short_name": "Parla",
-  "description": "Application PWA de micro-apprentissage de l'italien avec révisions, quiz et sauvegardes JSON.",
-  "start_url": "./index.html",
+  "description": "Application progressive pour apprendre l’italien par parcours thématiques",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#020617",
-  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "theme_color": "#111827",
+  "lang": "fr",
   "icons": [
     {
       "src": "assets/icon-192.png",
