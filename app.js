@@ -96,8 +96,7 @@ const els = {
   pathBadge: document.getElementById("pathBadge"),
   heroTitle: document.getElementById("heroTitle"),
   heroText: document.getElementById("heroText"),
-  installBtn: document.getElementById("installBtn"),
-  speakBtn: document.getElementById("speakBtn"),
+  installBtn: document.getElementById("installBtn"),  
     voiceSelect: document.getElementById("voiceSelect"),
   voiceStatus: document.getElementById("voiceStatus"),
   testSelectedVoiceBtn: document.getElementById("testSelectedVoiceBtn"),
@@ -108,9 +107,9 @@ const els = {
   voiceHelpIntro: document.getElementById("voiceHelpIntro"),
   voiceHelpContent: document.getElementById("voiceHelpContent"),
     lessonCatalogSection: document.getElementById("lessonCatalogSection"),
-  avatarBtn: document.getElementById("avatarBtn"),
-settingsBtn: document.getElementById("settingsBtn"),
-saveBtn: document.getElementById("saveBtn"),
+  profileModalBtn: document.getElementById("profileModalBtn"),
+settingsModalBtn: document.getElementById("settingsModalBtn"),
+saveModalBtn: document.getElementById("saveModalBtn"),
 profileModal: document.getElementById("profileModal"),
 settingsModal: document.getElementById("settingsModal"),
 saveModal: document.getElementById("saveModal"),
@@ -124,12 +123,10 @@ document.addEventListener("DOMContentLoaded", init);
 async function init() {
   await loadData();
   hydrateMissingPathwayProgress();
-  initCollapsibles();
   bindEvents();
   initVoices();
   registerSW();
   refreshAll();
-  syncContextualCollapsibles();
 }
 
 async function loadData() {
@@ -264,11 +261,7 @@ function bindEvents() {
 
   els.exportBtn.addEventListener("click", exportStateToFile);
   els.importInput.addEventListener("change", importStateFromFile);
-  els.resetBtn.addEventListener("click", resetState);
-
-  els.speakBtn.addEventListener("click", () => {
-    speakItalian("Ciao, benvenuto su Parla");
-  });
+  els.resetBtn.addEventListener("click", resetState);  
 
   window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
@@ -302,10 +295,10 @@ function bindEvents() {
   });
 
   els.voiceHelpModal.addEventListener("click", (event) => {
-    if (event.target.matches("[data-close-modal='true']")) {
-      closeVoiceHelpModal();
-    }
-  });
+  if (event.target.matches("[data-close-modal='voice-help']")) {
+    closeVoiceHelpModal();
+  }
+});
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && !els.voiceHelpModal.classList.contains("hidden")) {
@@ -315,15 +308,15 @@ function bindEvents() {
   
   // ===== MODALS =====
 
-els.avatarBtn?.addEventListener("click", () => {
+els.profileModalBtn?.addEventListener("click", () => {
   openModal(els.profileModal);
 });
 
-els.settingsBtn?.addEventListener("click", () => {
+els.settingsModalBtn?.addEventListener("click", () => {
   openModal(els.settingsModal);
 });
 
-els.saveBtn?.addEventListener("click", () => {
+els.saveModalBtn?.addEventListener("click", () => {
   openModal(els.saveModal);
 });
 
@@ -344,6 +337,24 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal(els.profileModal);
     closeModal(els.settingsModal);
+    closeModal(els.saveModal);
+  }
+});
+
+  els.profileModal?.addEventListener("click", (event) => {
+  if (event.target.matches("[data-close-modal='profile']")) {
+    closeModal(els.profileModal);
+  }
+});
+
+els.settingsModal?.addEventListener("click", (event) => {
+  if (event.target.matches("[data-close-modal='settings']")) {
+    closeModal(els.settingsModal);
+  }
+});
+
+els.saveModal?.addEventListener("click", (event) => {
+  if (event.target.matches("[data-close-modal='save']")) {
     closeModal(els.saveModal);
   }
 });
@@ -965,9 +976,7 @@ function setNoVoiceState(message) {
   showVoiceActionButtons({
     canTest: false,
     canInstallHelp: true
-  });
-
-  openCollapsibleSection("voice");
+  }); 
 }
 
 function getSelectedItalianVoice() {
