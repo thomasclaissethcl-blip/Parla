@@ -87,6 +87,13 @@ input[type="search"],
   display: none !important;
 }
 
+.lesson-help {
+  margin: 0.75rem 0 0;
+  color: var(--warning);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
 .app-shell {
   max-width: 1450px;
   margin: 0 auto;
