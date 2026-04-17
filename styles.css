@@ -598,3 +598,63 @@ input[type="search"] {
     padding: 0.9rem;
   }
 }
+
+.collapsible-section {
+  border-top: 1px solid rgba(55, 65, 81, 0.45);
+  padding-top: 0.25rem;
+}
+
+.collapse-toggle {
+  width: 100%;
+  background: transparent;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-radius: 0;
+  font-weight: 700;
+}
+
+.collapse-toggle:hover {
+  transform: none;
+  opacity: 0.95;
+}
+
+.collapse-toggle span:first-child {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.collapse-icon {
+  transition: transform 0.2s ease;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.collapsible-section .collapse-content {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.22s ease, opacity 0.22s ease, margin-top 0.22s ease;
+  opacity: 1;
+  margin-top: 0.6rem;
+}
+
+.collapsible-section .collapse-content > * {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.collapsible-section.collapsed .collapse-content {
+  grid-template-rows: 0fr;
+  opacity: 0;
+  margin-top: 0;
+}
+
+.collapsible-section:not(.collapsed) .collapse-icon {
+  transform: rotate(180deg);
+}
+
+.sidebar > section + section {
+  margin-top: 0.1rem;
+}
