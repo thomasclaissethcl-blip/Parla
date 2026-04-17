@@ -12,20 +12,97 @@
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <div>
-        <h1>Parla</h1>
-        <p class="subtitle">Apprendre l’italien avec des parcours thématiques</p>
+      <div class="brand-wrap">
+        <div>
+          <h1>Parla</h1>
+          <p class="subtitle">Apprendre l’italien avec des parcours thématiques</p>
+        </div>
       </div>
+
       <div class="topbar-actions">
         <button id="installBtn" class="secondary hidden">Installer</button>
-        <button id="speakBtn" class="secondary">Tester l’audio</button>
+
+        <button id="profileModalBtn" class="icon-btn" type="button" aria-label="Ouvrir le suivi">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2.25c-4.14 0-7.5 2.69-7.5 6v.75h15v-.75c0-3.31-3.36-6-7.5-6Z"></path>
+          </svg>
+        </button>
+
+        <button id="settingsModalBtn" class="icon-btn" type="button" aria-label="Ouvrir les réglages">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m19.14 12.94.86-.5a1 1 0 0 0 .37-1.36l-1.12-1.94a1 1 0 0 0-1.31-.43l-.87.39a7.56 7.56 0 0 0-1.62-.94l-.13-.95A1 1 0 0 0 14.33 6h-2.24a1 1 0 0 0-.99.84l-.13.95a7.56 7.56 0 0 0-1.62.94l-.87-.39a1 1 0 0 0-1.31.43L6.05 10.7a1 1 0 0 0 .37 1.36l.86.5a7.9 7.9 0 0 0 0 1.88l-.86.5a1 1 0 0 0-.37 1.36l1.12 1.94a1 1 0 0 0 1.31.43l.87-.39a7.56 7.56 0 0 0 1.62.94l.13.95a1 1 0 0 0 .99.84h2.24a1 1 0 0 0 .99-.84l.13-.95a7.56 7.56 0 0 0 1.62-.94l.87.39a1 1 0 0 0 1.31-.43l1.12-1.94a1 1 0 0 0-.37-1.36l-.86-.5a7.9 7.9 0 0 0 0-1.88ZM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5Z"></path>
+          </svg>
+        </button>
+
+        <button id="saveModalBtn" class="icon-btn" type="button" aria-label="Ouvrir la sauvegarde">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 3h10l5 5v13H3V3h3Zm1.5 2v4h8V5Zm0 8v6h9v-6Zm7-8v2h2.5Z"></path>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main class="layout">
-      <aside class="sidebar card">
-        <section>
-          <h2>Profil</h2>
+      <aside class="sidebar">
+        <section class="card stage-panel">
+          <div class="section-head section-head-tight">
+            <h2>Stage actuel</h2>
+            <span id="pathwayInlineBadge" class="pill muted">Mode libre</span>
+          </div>
+          <div id="currentStageCard" class="stage-card">
+            <strong id="currentStageLabel">Libre</strong>
+            <p id="currentStageDescription">Vous choisissez vos leçons librement.</p>
+          </div>
+        </section>
+
+        <section id="pathwaySection" class="card hidden">
+          <div class="section-head section-head-tight">
+            <h2>Parcours</h2>
+          </div>
+          <div id="pathwayList" class="pathway-list"></div>
+        </section>
+      </aside>
+
+      <section class="main-column">
+        <section id="lessonCatalogSection" class="card">
+          <div class="section-head">
+            <h2>Leçons disponibles</h2>
+            <input id="searchInput" type="search" placeholder="Rechercher une leçon ou un mot-clé" />
+          </div>
+          <div id="lessonList" class="lesson-grid"></div>
+        </section>
+
+        <section class="card hidden" id="lessonPlayer">
+          <div class="lesson-player-head">
+            <div>
+              <p id="lessonMeta" class="meta"></p>
+              <h2 id="lessonTitle">Titre de la leçon</h2>
+            </div>
+            <button id="closeLessonBtn" class="secondary">Fermer</button>
+          </div>
+
+          <div id="lessonContent" class="lesson-content"></div>
+
+          <div class="lesson-actions">
+            <button id="listenLessonBtn" class="secondary">Écouter les mots</button>
+            <button id="completeLessonBtn">Valider la leçon</button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <div id="profileModal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+    <div class="modal-backdrop" data-close-modal="profile"></div>
+    <div class="modal-dialog modal-dialog-large">
+      <div class="modal-header">
+        <h2 id="profileModalTitle">Suivi d’apprentissage</h2>
+        <button id="closeProfileModalBtn" class="secondary modal-close" aria-label="Fermer">Fermer</button>
+      </div>
+
+      <div class="modal-body modal-grid">
+        <section class="modal-card">
+          <h3>Profil</h3>
           <div class="stats-grid">
             <div class="stat">
               <span class="label">XP</span>
@@ -51,82 +128,10 @@
           </div>
         </section>
 
-      <section class="collapsible-section collapsed" data-collapsible-name="voice">
-    <button class="collapse-toggle" type="button" aria-expanded="false">
-      <span>Voix italienne</span>
-      <span class="collapse-icon">▾</span>
-    </button>
-    <div class="collapse-content">
-      <div class="stack-actions">
-        <label for="voiceSelect" class="small-text">Choix de la voix</label>
-        <select id="voiceSelect" class="voice-select">
-          <option value="">Chargement des voix…</option>
-        </select>
-        <p id="voiceStatus" class="small-text">
-          Détection des voix en cours.
-        </p>
-        <button id="testSelectedVoiceBtn" class="secondary hidden">Tester la voix sélectionnée</button>
-        <button id="helpVoiceBtn" class="secondary hidden">Comment installer une nouvelle voix</button>
-      </div>
-    </div>
-  </section>
-
-        <section class="collapsible-section collapsed" data-collapsible-name="learning-mode">
-    <button class="collapse-toggle" type="button" aria-expanded="false">
-      <span>Mode d’apprentissage</span>
-      <span class="collapse-icon">▾</span>
-    </button>
-    <div class="collapse-content">
-      <div class="mode-switch">
-        <button id="freeModeBtn" class="mode-btn active">À la carte</button>
-        <button id="pathModeBtn" class="mode-btn">Parcours</button>
-      </div>
-    </div>
-  </section>
-
-        <section id="pathwaySection" class="collapsible-section collapsed" data-collapsible-name="pathways">
-    <button class="collapse-toggle" type="button" aria-expanded="false">
-      <span>Parcours</span>
-      <span class="collapse-icon">▾</span>
-    </button>
-    <div class="collapse-content">
-      <div id="pathwayList" class="pathway-list"></div>
-    </div>
-  </section>
-
-        <section class="collapsible-section collapsed" data-collapsible-name="current-stage">
-    <button class="collapse-toggle" type="button" aria-expanded="false">
-      <span>Stage actuel</span>
-      <span class="collapse-icon">▾</span>
-    </button>
-    <div class="collapse-content">
-      <div id="currentStageCard" class="stage-card">
-        <strong id="currentStageLabel">Libre</strong>
-        <p id="currentStageDescription">Vous choisissez vos leçons librement.</p>
-      </div>
-    </div>
-  </section>
-
-        <section>
-          <h2>Sauvegarde</h2>
-          <div class="stack-actions">
-            <button id="exportBtn">Exporter ma progression</button>
-            <label class="file-label">
-              Importer une sauvegarde
-              <input id="importInput" type="file" accept="application/json" />
-            </label>
-            <button id="resetBtn" class="danger">Réinitialiser</button>
-          </div>
-        </section>
-      </aside>
-
-      <section class="main-column">
-        <section class="card hero">
+        <section class="modal-card hero-card">
           <div>
-            <h2 id="heroTitle">Votre tableau de bord</h2>
-            <p id="heroText">
-              Choisissez un parcours ou explorez les leçons librement.
-            </p>
+            <h3 id="heroTitle">Votre tableau de bord</h3>
+            <p id="heroText">Choisissez un parcours ou explorez les leçons librement.</p>
           </div>
           <div class="hero-badges">
             <span id="modeBadge" class="pill">Mode libre</span>
@@ -134,9 +139,9 @@
           </div>
         </section>
 
-        <section class="card">
+        <section class="modal-card">
           <div class="section-head">
-            <h2>Objectif du jour</h2>
+            <h3>Objectif du jour</h3>
             <span id="dailyGoalText">1 leçon + 1 révision</span>
           </div>
           <div class="daily-grid">
@@ -155,34 +160,9 @@
           </div>
         </section>
 
-        <section id="lessonCatalogSection" class="card">
-  <div class="section-head">
-    <h2>Leçons disponibles</h2>
-    <input id="searchInput" type="search" placeholder="Rechercher une leçon ou un mot-clé" />
-  </div>
-  <div id="lessonList" class="lesson-grid"></div>
-</section>
-
-        <section class="card hidden" id="lessonPlayer">
-          <div class="lesson-player-head">
-            <div>
-              <p id="lessonMeta" class="meta"></p>
-              <h2 id="lessonTitle">Titre de la leçon</h2>
-            </div>
-            <button id="closeLessonBtn" class="secondary">Fermer</button>
-          </div>
-
-          <div id="lessonContent" class="lesson-content"></div>
-
-          <div class="lesson-actions">
-            <button id="listenLessonBtn" class="secondary">Écouter les mots</button>
-            <button id="completeLessonBtn">Valider la leçon</button>
-          </div>
-        </section>
-
-        <section class="card">
+        <section class="modal-card">
           <div class="section-head">
-            <h2>Révision espacée</h2>
+            <h3>Révision espacée</h3>
             <button id="startReviewBtn">Lancer une révision</button>
           </div>
           <div id="reviewArea" class="review-area">
@@ -190,37 +170,95 @@
           </div>
         </section>
 
-        <section class="card">
+        <section class="modal-card">
           <div class="section-head">
-            <h2>Quiz rapide</h2>
+            <h3>Quiz rapide</h3>
             <button id="startQuizBtn">Lancer un quiz</button>
           </div>
           <div id="quizArea" class="quiz-area">
             <p>Un quiz de consolidation apparaîtra ici.</p>
           </div>
         </section>
-      </section>
-    </main>
+      </div>
+    </div>
+  </div>
+
+  <div id="settingsModal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+    <div class="modal-backdrop" data-close-modal="settings"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2 id="settingsModalTitle">Réglages d’apprentissage</h2>
+        <button id="closeSettingsModalBtn" class="secondary modal-close" aria-label="Fermer">Fermer</button>
+      </div>
+
+      <div class="modal-body">
+        <section class="modal-card">
+          <h3>Mode d’apprentissage</h3>
+          <div class="mode-switch">
+            <button id="freeModeBtn" class="mode-btn active">À la carte</button>
+            <button id="pathModeBtn" class="mode-btn">Parcours</button>
+          </div>
+          <p class="small-text settings-note">Le choix du mode modifie l’affichage des parcours dans la colonne latérale.</p>
+        </section>
+
+        <section class="modal-card">
+          <h3>Voix italienne</h3>
+          <div class="stack-actions">
+            <label for="voiceSelect" class="small-text">Choix de la voix</label>
+            <select id="voiceSelect" class="voice-select">
+              <option value="">Chargement des voix…</option>
+            </select>
+            <p id="voiceStatus" class="small-text">Détection des voix en cours.</p>
+            <button id="testSelectedVoiceBtn" class="secondary hidden">Tester la voix sélectionnée</button>
+            <button id="helpVoiceBtn" class="secondary hidden">Comment installer une nouvelle voix</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="saveModal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="saveModalTitle">
+    <div class="modal-backdrop" data-close-modal="save"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2 id="saveModalTitle">Sauvegarde</h2>
+        <button id="closeSaveModalBtn" class="secondary modal-close" aria-label="Fermer">Fermer</button>
+      </div>
+
+      <div class="modal-body">
+        <section class="modal-card">
+          <div class="stack-actions">
+            <button id="exportBtn">Exporter ma progression</button>
+            <label class="file-label">
+              Importer une sauvegarde
+              <input id="importInput" type="file" accept="application/json" />
+            </label>
+            <button id="resetBtn" class="danger">Réinitialiser</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="voiceHelpModal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="voiceHelpTitle">
+    <div class="modal-backdrop" data-close-modal="voice-help"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2 id="voiceHelpTitle">Installer une voix italienne</h2>
+        <button id="closeVoiceHelpModalBtn" class="secondary modal-close" aria-label="Fermer">Fermer</button>
+      </div>
+
+      <div class="modal-body">
+        <p id="voiceHelpIntro" class="small-text"></p>
+        <div id="voiceHelpContent"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="refreshVoicesBtn">Actualiser les voix</button>
+      </div>
+    </div>
   </div>
 
   <script src="app.js" defer></script>
-  <div id="voiceHelpModal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="voiceHelpTitle">
-  <div class="modal-backdrop" data-close-modal="true"></div>
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <h2 id="voiceHelpTitle">Installer une voix italienne</h2>
-      <button id="closeVoiceHelpModalBtn" class="secondary modal-close" aria-label="Fermer">Fermer</button>
-    </div>
-
-    <div class="modal-body">
-      <p id="voiceHelpIntro" class="small-text"></p>
-      <div id="voiceHelpContent"></div>
-    </div>
-
-    <div class="modal-footer">
-      <button id="refreshVoicesBtn">Actualiser les voix</button>
-    </div>
-  </div>
-</div>
 </body>
 </html>
