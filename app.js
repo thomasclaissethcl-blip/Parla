@@ -116,6 +116,7 @@ saveModal: document.getElementById("saveModal"),
 closeProfileModal: document.getElementById("closeProfileModal"),
 closeSettingsModal: document.getElementById("closeSettingsModal"),
 closeSaveModal: document.getElementById("closeSaveModal"),
+  pathwayInlineBadge: document.getElementById("pathwayInlineBadge"),
 };
 
 document.addEventListener("DOMContentLoaded", init);
@@ -371,11 +372,20 @@ function refreshAll() {
   saveState();
   const pathwaySection = document.getElementById("pathwaySection");
 
-if (pathwaySection) {
+  if (pathwaySection) {
+    if (state.learningMode === "pathway") {
+      pathwaySection.classList.remove("hidden");
+    } else {
+      pathwaySection.classList.add("hidden");
+    }
+  }
+
+  if (els.pathwayInlineBadge) {
   if (state.learningMode === "pathway") {
-    pathwaySection.classList.remove("hidden");
+    const currentPathway = pathways.find((p) => p.id === state.selectedPathway);
+    els.pathwayInlineBadge.textContent = currentPathway ? currentPathway.title : "Mode parcours";
   } else {
-    pathwaySection.classList.add("hidden");
+    els.pathwayInlineBadge.textContent = "Mode libre";
   }
 }
 }
