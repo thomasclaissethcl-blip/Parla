@@ -113,9 +113,9 @@ saveModalBtn: document.getElementById("saveModalBtn"),
 profileModal: document.getElementById("profileModal"),
 settingsModal: document.getElementById("settingsModal"),
 saveModal: document.getElementById("saveModal"),
-closeProfileModal: document.getElementById("closeProfileModal"),
-closeSettingsModal: document.getElementById("closeSettingsModal"),
-closeSaveModal: document.getElementById("closeSaveModal"),
+closeProfileModalBtn: document.getElementById("closeProfileModalBtn"),
+closeSettingsModalBtn: document.getElementById("closeSettingsModalBtn"),
+closeSaveModalBtn: document.getElementById("closeSaveModalBtn"),
   pathwayInlineBadge: document.getElementById("pathwayInlineBadge"),
 };
 
@@ -321,15 +321,15 @@ els.saveModalBtn?.addEventListener("click", () => {
   openModal(els.saveModal);
 });
 
-els.closeProfileModal?.addEventListener("click", () => {
+els.closeProfileModalBtn?.addEventListener("click", () => {
   closeModal(els.profileModal);
 });
 
-els.closeSettingsModal?.addEventListener("click", () => {
+els.closeSettingsModalBtn?.addEventListener("click", () => {
   closeModal(els.settingsModal);
 });
 
-els.closeSaveModal?.addEventListener("click", () => {
+els.closeSaveModalBtn?.addEventListener("click", () => {
   closeModal(els.saveModal);
 });
 
