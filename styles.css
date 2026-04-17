@@ -672,3 +672,39 @@ input[type="search"],
     padding: 0.9rem;
   }
 }
+
+.explanations-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.explanation-card {
+  background: #0b1220;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.explanation-label {
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.explanation-text {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.explanation-language {
+  border-left: 4px solid var(--accent);
+}
+
+.explanation-culture {
+  border-left: 4px solid var(--danger);
+}
+
+.explanation-general {
+  border-left: 4px solid var(--info);
+}
