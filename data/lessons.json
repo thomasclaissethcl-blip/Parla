@@ -578,7 +578,8 @@
         { "id": "culture", "stage": "superlocuteur", "order": 11 },
         { "id": "politique", "stage": "superlocuteur", "order": 9 },
         { "id": "rencontres", "stage": "superlocuteur", "order": 15 }
-      ],
+      ]
+    },
     {
       "id": "nombres-1",
       "title": "Compter et donner un nombre",
