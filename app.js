@@ -117,6 +117,7 @@ closeProfileModalBtn: document.getElementById("closeProfileModalBtn"),
 closeSettingsModalBtn: document.getElementById("closeSettingsModalBtn"),
 closeSaveModalBtn: document.getElementById("closeSaveModalBtn"),
   pathwayInlineBadge: document.getElementById("pathwayInlineBadge"),
+listenLessonHelp: document.getElementById("listenLessonHelp"),
 };
 
 document.addEventListener("DOMContentLoaded", init);
@@ -187,7 +188,10 @@ function bindEvents() {
   });
 
   els.completeLessonBtn.addEventListener("click", completeCurrentLesson);
-  els.listenLessonBtn.addEventListener("click", listenCurrentLesson);
+  els.listenLessonBtn.addEventListener("click", () => {
+  if (!hasItalianVoiceSelected()) return;
+  listenCurrentLesson();
+});
 
   els.startReviewBtn.addEventListener("click", startReviewSession);
   els.startQuizBtn.addEventListener("click", startQuickQuiz);
@@ -211,10 +215,11 @@ function bindEvents() {
   });
   
     els.voiceSelect.addEventListener("change", () => {
-    state.settings.selectedVoiceURI = els.voiceSelect.value || null;
-    saveState();
-    updateVoiceStatus();
-  });
+  state.settings.selectedVoiceURI = els.voiceSelect.value || null;
+  saveState();
+  updateVoiceStatus();
+  updateListenButtonState();
+});
 
   els.testSelectedVoiceBtn.addEventListener("click", () => {
     speakItalian("Ciao, mi chiamo Parla. Benvenuto nel corso di italiano.");
@@ -291,6 +296,36 @@ els.saveModal?.addEventListener("click", (event) => {
     closeModal(els.saveModal);
   }
 });
+}
+
+function hasItalianVoiceSelected() {
+  if (!state.settings.selectedVoiceURI) return false;
+
+  const voice = availableVoices.find(
+    (v) => v.voiceURI === state.settings.selectedVoiceURI
+  );
+
+  if (!voice) return false;
+
+  return voice.lang && voice.lang.toLowerCase().startsWith("it");
+}
+
+function updateListenButtonState() {
+  if (!els.listenLessonBtn) return;
+
+  const enabled = hasItalianVoiceSelected();
+
+  els.listenLessonBtn.disabled = !enabled;
+
+  if (!enabled) {
+    els.listenLessonBtn.classList.add("locked");
+    els.listenLessonBtn.title = "Sélectionnez une voix italienne dans les réglages pour activer l’écoute";
+    els.listenLessonHelp?.classList.remove("hidden");
+  } else {
+    els.listenLessonBtn.classList.remove("locked");
+    els.listenLessonBtn.title = "";
+    els.listenLessonHelp?.classList.add("hidden");
+  }
 }
 
 function refreshAll() {
@@ -510,6 +545,7 @@ function openLesson(lessonId) {
 
   els.lessonTitle.textContent = lesson.title;
   els.lessonContent.innerHTML = buildLessonContentHTML(lesson);
+  updateListenButtonState();
   attachQuizButtons(lesson);
 
   els.lessonCatalogSection.classList.add("hidden");
