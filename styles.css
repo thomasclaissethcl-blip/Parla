@@ -474,3 +474,20 @@ input[type="search"] {
     grid-template-columns: 1fr;
   }
 }
+
+.voice-select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: #0b1220;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 12px;
+}
+
+.small-text.success {
+  color: #bbf7d0;
+}
+
+.small-text.warning {
+  color: #fde68a;
+}
