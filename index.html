@@ -69,6 +69,7 @@
       Détection des voix en cours.
     </p>
     <button id="testSelectedVoiceBtn" class="secondary">Tester la voix sélectionnée</button>
+    <button id="helpVoiceBtn" class="secondary">Comment installer une nouvelle voix</button>
   </div>
 </section>
 
@@ -182,5 +183,23 @@
   </div>
 
   <script src="app.js" defer></script>
+  <div id="voiceHelpModal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="voiceHelpTitle">
+  <div class="modal-backdrop" data-close-modal="true"></div>
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2 id="voiceHelpTitle">Installer une voix italienne</h2>
+      <button id="closeVoiceHelpModalBtn" class="secondary modal-close" aria-label="Fermer">Fermer</button>
+    </div>
+
+    <div class="modal-body">
+      <p id="voiceHelpIntro" class="small-text"></p>
+      <div id="voiceHelpContent"></div>
+    </div>
+
+    <div class="modal-footer">
+      <button id="refreshVoicesBtn">Actualiser les voix</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
