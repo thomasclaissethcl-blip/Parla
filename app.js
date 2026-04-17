@@ -710,7 +710,7 @@ function getItalianVoice() {
 
 function initVoices() {
   if (!("speechSynthesis" in window)) {
-    updateVoiceStatus("Synthèse vocale non disponible sur ce navigateur.", "warning");
+    setNoVoiceState("Synthèse vocale non disponible sur ce navigateur.");
     return;
   }
 
@@ -718,12 +718,19 @@ function initVoices() {
 
   window.speechSynthesis.getVoices();
 
-  window.speechSynthesis.addEventListener("voiceschanged", () => {
-    loadVoicesIntoUI();
-  });
+  if (typeof window.speechSynthesis.onvoiceschanged !== "undefined") {
+    window.speechSynthesis.onvoiceschanged = () => {
+      loadVoicesIntoUI();
+    };
+  }
+
+  // Filet de sécurité : si rien n'arrive, on tranche au bout d'un court délai
+  setTimeout(() => {
+    loadVoicesIntoUI(true);
+  }, 1500);
 }
 
-function loadVoicesIntoUI() {
+function loadVoicesIntoUI(forceFinalState = false) {
   availableVoices = window.speechSynthesis.getVoices() || [];
 
   const italianVoices = availableVoices
@@ -735,9 +742,18 @@ function loadVoicesIntoUI() {
   if (!italianVoices.length) {
     const option = document.createElement("option");
     option.value = "";
-    option.textContent = "Aucune voix italienne détectée";
+    option.textContent = forceFinalState
+      ? "Aucune voix italienne détectée"
+      : "Chargement des voix…";
     els.voiceSelect.appendChild(option);
-    updateVoiceStatus("Aucune voix italienne n’a été détectée sur cet appareil. La prononciation peut être approximative.", "warning");
+
+    if (forceFinalState) {
+      setNoVoiceState("Aucune voix italienne n’a été détectée sur cet appareil ou dans ce navigateur.");
+    } else {
+      els.voiceStatus.textContent = "Détection des voix en cours.";
+      els.voiceStatus.className = "small-text";
+    }
+
     return;
   }
 
@@ -767,6 +783,17 @@ function loadVoicesIntoUI() {
   updateVoiceStatus();
 }
 
+function setNoVoiceState(message) {
+  els.voiceSelect.innerHTML = "";
+  const option = document.createElement("option");
+  option.value = "";
+  option.textContent = "Aucune voix italienne détectée";
+  els.voiceSelect.appendChild(option);
+  els.voiceSelect.value = "";
+  els.voiceStatus.textContent = message;
+  els.voiceStatus.className = "small-text warning";
+}
+
 function getSelectedItalianVoice() {
   if (!availableVoices.length) return null;
 
@@ -784,18 +811,11 @@ function getSelectedItalianVoice() {
   );
 }
 
-function updateVoiceStatus(customMessage = null, type = null) {
-  if (customMessage) {
-    els.voiceStatus.textContent = customMessage;
-    els.voiceStatus.className = `small-text ${type || ""}`.trim();
-    return;
-  }
-
+function updateVoiceStatus() {
   const selectedVoice = getSelectedItalianVoice();
 
   if (!selectedVoice) {
-    els.voiceStatus.textContent = "Aucune voix italienne disponible. Le navigateur utilisera éventuellement une voix de repli.";
-    els.voiceStatus.className = "small-text warning";
+    setNoVoiceState("Aucune voix italienne disponible. Le navigateur utilisera éventuellement une voix de repli.");
     return;
   }
 
@@ -815,7 +835,6 @@ function speakItalian(text) {
   utterance.pitch = 1;
 
   const italianVoice = getSelectedItalianVoice();
-
   if (italianVoice) {
     utterance.voice = italianVoice;
     utterance.lang = italianVoice.lang || "it-IT";
@@ -823,17 +842,6 @@ function speakItalian(text) {
 
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(utterance);
-}
-
-function initVoices() {
-  // force le chargement des voix
-  window.speechSynthesis.getVoices();
-
-  if (speechSynthesis.onvoiceschanged !== undefined) {
-    speechSynthesis.onvoiceschanged = () => {
-      console.log("Voix disponibles :", speechSynthesis.getVoices());
-    };
-  }
 }
 
 function exportStateToFile() {
