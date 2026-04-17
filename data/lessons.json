@@ -1,1 +1,70 @@
-
+[
+  {
+    "id": "basics-1",
+    "title": "Saluer et se présenter",
+    "description": "Apprenez à dire bonjour, au revoir et à vous présenter simplement.",
+    "difficulty": "Débutant",
+    "xp": 40,
+    "expressions": [
+      {"it": "Ciao", "fr": "Salut", "phonetic": "tchao", "example": "Ciao, come stai ?"},
+      {"it": "Buongiorno", "fr": "Bonjour", "phonetic": "bouon-djor-no", "example": "Buongiorno, signora."},
+      {"it": "Mi chiamo Luca", "fr": "Je m'appelle Luca", "phonetic": "mi kia-mo lou-ka", "example": "Mi chiamo Luca e sono francese."},
+      {"it": "Piacere", "fr": "Enchanté", "phonetic": "pia-tché-ré", "example": "Piacere di conoscerti."}
+    ],
+    "practice": [
+      {"prompt": "Traduisez en italien : Bonjour", "answer": "buongiorno"},
+      {"prompt": "Traduisez en italien : Je m'appelle Anna", "answer": "mi chiamo anna"}
+    ]
+  },
+  {
+    "id": "basics-2",
+    "title": "Les nombres et les achats simples",
+    "description": "Compter, demander un prix et acheter quelque chose.",
+    "difficulty": "Débutant",
+    "xp": 50,
+    "expressions": [
+      {"it": "uno, due, tre", "fr": "un, deux, trois", "phonetic": "ou-no, dou-é, tré", "example": "Vorrei tre caffè."},
+      {"it": "Quanto costa ?", "fr": "Combien cela coûte-t-il ?", "phonetic": "kouan-to ko-sta", "example": "Quanto costa questo panino ?"},
+      {"it": "Vorrei un caffè", "fr": "Je voudrais un café", "phonetic": "vor-réï oun kaf-fè", "example": "Vorrei un caffè, per favore."},
+      {"it": "Per favore", "fr": "S'il vous plaît", "phonetic": "pèr fa-vo-ré", "example": "Un biglietto, per favore."}
+    ],
+    "practice": [
+      {"prompt": "Traduisez en italien : Combien cela coûte-t-il ?", "answer": "quanto costa"},
+      {"prompt": "Traduisez en italien : Je voudrais un café", "answer": "vorrei un caffè", "altAnswers": ["vorrei un caffe"]}
+    ]
+  },
+  {
+    "id": "travel-1",
+    "title": "Se déplacer en ville",
+    "description": "Demander son chemin, comprendre une direction et parler des transports.",
+    "difficulty": "Intermédiaire",
+    "xp": 60,
+    "expressions": [
+      {"it": "Dov'è la stazione ?", "fr": "Où est la gare ?", "phonetic": "do-vè la sta-tsio-né", "example": "Scusi, dov'è la stazione ?"},
+      {"it": "A destra / a sinistra", "fr": "À droite / à gauche", "phonetic": "a dè-stra / a si-ni-stra", "example": "Il museo è a sinistra."},
+      {"it": "Prendo l'autobus", "fr": "Je prends le bus", "phonetic": "prèn-do lo-to-bous", "example": "Prendo l'autobus numero 5."},
+      {"it": "È lontano ?", "fr": "C'est loin ?", "phonetic": "è lon-ta-no", "example": "Il centro è lontano ?"}
+    ],
+    "practice": [
+      {"prompt": "Traduisez en italien : Où est la gare ?", "answer": "dov'è la stazione", "altAnswers": ["dove e la stazione", "dove è la stazione"]},
+      {"prompt": "Traduisez en italien : À droite", "answer": "a destra"}
+    ]
+  },
+  {
+    "id": "social-1",
+    "title": "Parler de ses goûts",
+    "description": "Exprimer ses préférences et poser des questions simples sur les loisirs.",
+    "difficulty": "Intermédiaire",
+    "xp": 70,
+    "expressions": [
+      {"it": "Mi piace la musica", "fr": "J'aime la musique", "phonetic": "mi pia-tché la mou-zi-ka", "example": "Mi piace la musica italiana."},
+      {"it": "Non mi piace", "fr": "Je n'aime pas", "phonetic": "non mi pia-tché", "example": "Non mi piace il freddo."},
+      {"it": "Che cosa ti piace fare ?", "fr": "Qu'aimez-vous faire ?", "phonetic": "ké ko-za ti pia-tché fa-ré", "example": "Che cosa ti piace fare nel tempo libero ?"},
+      {"it": "Nel tempo libero", "fr": "Pendant le temps libre", "phonetic": "nèl tèm-po li-bè-ro", "example": "Nel tempo libero leggo."}
+    ],
+    "practice": [
+      {"prompt": "Traduisez en italien : J'aime la musique", "answer": "mi piace la musica"},
+      {"prompt": "Traduisez en italien : Je n'aime pas", "answer": "non mi piace"}
+    ]
+  }
+]
