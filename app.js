@@ -97,7 +97,7 @@ const els = {
   heroTitle: document.getElementById("heroTitle"),
   heroText: document.getElementById("heroText"),
   installBtn: document.getElementById("installBtn"),
-  speakBtn: document.getElementById("speakBtn")
+  speakBtn: document.getElementById("speakBtn"),
     voiceSelect: document.getElementById("voiceSelect"),
   voiceStatus: document.getElementById("voiceStatus"),
   testSelectedVoiceBtn: document.getElementById("testSelectedVoiceBtn"),
