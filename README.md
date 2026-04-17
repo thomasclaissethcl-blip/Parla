@@ -4,9 +4,7 @@ Application PWA statique pour GitHub Pages afin d'apprendre l'italien.
 
 ## Déploiement
 
-1. Placez tous les fichiers à la racine de votre dépôt GitHub Pages.
-2. Vérifiez que `index.html` est servi depuis la racine du site.
-3. Le service worker activera le mode hors ligne après le premier chargement.
+Le service worker activera le mode hors ligne après le premier chargement.
 
 ## Sauvegarde utilisateur
 
@@ -48,7 +46,7 @@ Exemple de structure exportée :
 
 ## Ajouter des leçons
 
-Modifiez `data/lessons.json` en respectant cette structure :
+Modifier `data/lessons.json` en respectant cette structure :
 
 ```json
 {
