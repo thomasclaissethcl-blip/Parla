@@ -497,7 +497,6 @@ function openLesson(lessonId) {
   els.lessonPlayer.classList.remove("hidden");
   els.lessonPlayer.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-}
 
 function buildLessonContentHTML(lesson) {
   const vocabHtml = `
