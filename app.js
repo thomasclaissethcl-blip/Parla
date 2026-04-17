@@ -161,73 +161,6 @@ function closeModal(el) {
   document.body.style.overflow = "";
 }
 
-function initCollapsibles() {
-  const sections = document.querySelectorAll(".collapsible-section");
-
-  sections.forEach((section) => {
-    const toggle = section.querySelector(".collapse-toggle");
-    if (!toggle) return;
-
-    toggle.addEventListener("click", () => {
-      toggleCollapsibleSection(section);
-    });
-  });
-}
-
-function toggleCollapsibleSection(section) {
-  const isCollapsed = section.classList.contains("collapsed");
-
-  if (isCollapsed) {
-    openCollapsibleSection(section);
-  } else {
-    closeCollapsibleSection(section);
-  }
-}
-
-function openCollapsibleSection(sectionOrName) {
-  const section = resolveCollapsibleSection(sectionOrName);
-  if (!section) return;
-
-  section.classList.remove("collapsed");
-  const toggle = section.querySelector(".collapse-toggle");
-  if (toggle) {
-    toggle.setAttribute("aria-expanded", "true");
-  }
-}
-
-function closeCollapsibleSection(sectionOrName) {
-  const section = resolveCollapsibleSection(sectionOrName);
-  if (!section) return;
-
-  section.classList.add("collapsed");
-  const toggle = section.querySelector(".collapse-toggle");
-  if (toggle) {
-    toggle.setAttribute("aria-expanded", "false");
-  }
-}
-
-function resolveCollapsibleSection(sectionOrName) {
-  if (!sectionOrName) return null;
-
-  if (typeof sectionOrName !== "string") {
-    return sectionOrName;
-  }
-
-  return document.querySelector(
-    `.collapsible-section[data-collapsible-name="${sectionOrName}"]`
-  );
-}
-
-function syncContextualCollapsibles() {
-  if (state.learningMode === "pathway") {
-    openCollapsibleSection("pathways");
-  }
-
-  if (!hasDetectedItalianVoice()) {
-    openCollapsibleSection("voice");
-  }
-}
-
 function bindEvents() {
   els.freeModeBtn.addEventListener("click", () => {
     state.learningMode = "free";
@@ -241,8 +174,7 @@ function bindEvents() {
       state.selectedPathway = pathways[0].id;
     }
     saveState();
-    refreshAll();
-    openCollapsibleSection("pathways");
+    refreshAll();   
   });
 
   els.searchInput.addEventListener("input", renderLessonList);
