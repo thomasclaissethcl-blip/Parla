@@ -107,6 +107,7 @@ const els = {
   refreshVoicesBtn: document.getElementById("refreshVoicesBtn"),
   voiceHelpIntro: document.getElementById("voiceHelpIntro"),
   voiceHelpContent: document.getElementById("voiceHelpContent"),
+    lessonCatalogSection: document.getElementById("lessonCatalogSection"),
 };
 
 document.addEventListener("DOMContentLoaded", init);
@@ -227,9 +228,11 @@ function bindEvents() {
 
   els.searchInput.addEventListener("input", renderLessonList);
 
-  els.closeLessonBtn.addEventListener("click", () => {
+    els.closeLessonBtn.addEventListener("click", () => {
     currentLesson = null;
     els.lessonPlayer.classList.add("hidden");
+    els.lessonCatalogSection.classList.remove("hidden");
+    els.lessonCatalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   els.completeLessonBtn.addEventListener("click", completeCurrentLesson);
@@ -490,8 +493,10 @@ function openLesson(lessonId) {
   els.lessonContent.innerHTML = buildLessonContentHTML(lesson);
   attachQuizButtons(lesson);
 
+  els.lessonCatalogSection.classList.add("hidden");
   els.lessonPlayer.classList.remove("hidden");
   els.lessonPlayer.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 }
 
 function buildLessonContentHTML(lesson) {
@@ -1213,8 +1218,9 @@ function resetState() {
   }
   hydrateMissingPathwayProgress();
   saveState();
-  currentLesson = null;
+    currentLesson = null;
   els.lessonPlayer.classList.add("hidden");
+  els.lessonCatalogSection.classList.remove("hidden");
   els.reviewArea.innerHTML = "<p>Les cartes à réviser apparaîtront ici.</p>";
   els.quizArea.innerHTML = "<p>Un quiz de consolidation apparaîtra ici.</p>";
   refreshAll();
