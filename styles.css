@@ -107,6 +107,12 @@ input[type="search"],
   gap: 1rem;
 }
 
+.brand-title {
+  background: linear-gradient(90deg, #009246, #f7f3e8, #ce2b37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .topbar h1 {
   margin: 0;
   font-size: 2rem;
@@ -145,6 +151,10 @@ input[type="search"],
   width: 23px;
   height: 23px;
   fill: currentColor;
+}
+
+.icon-profile {
+  border-color: rgba(0, 146, 70, 0.4);
 }
 
 .layout {
