@@ -101,6 +101,12 @@ const els = {
     voiceSelect: document.getElementById("voiceSelect"),
   voiceStatus: document.getElementById("voiceStatus"),
   testSelectedVoiceBtn: document.getElementById("testSelectedVoiceBtn"),
+    helpVoiceBtn: document.getElementById("helpVoiceBtn"),
+  voiceHelpModal: document.getElementById("voiceHelpModal"),
+  closeVoiceHelpModalBtn: document.getElementById("closeVoiceHelpModalBtn"),
+  refreshVoicesBtn: document.getElementById("refreshVoicesBtn"),
+  voiceHelpIntro: document.getElementById("voiceHelpIntro"),
+  voiceHelpContent: document.getElementById("voiceHelpContent"),
 };
 
 document.addEventListener("DOMContentLoaded", init);
@@ -192,6 +198,25 @@ function bindEvents() {
 
   els.testSelectedVoiceBtn.addEventListener("click", () => {
     speakItalian("Ciao, mi chiamo Parla. Benvenuto nel corso di italiano.");
+  });
+
+    els.helpVoiceBtn.addEventListener("click", openVoiceHelpModal);
+  els.closeVoiceHelpModalBtn.addEventListener("click", closeVoiceHelpModal);
+  els.refreshVoicesBtn.addEventListener("click", () => {
+    loadVoicesIntoUI(true);
+    closeVoiceHelpModal();
+  });
+
+  els.voiceHelpModal.addEventListener("click", (event) => {
+    if (event.target.matches("[data-close-modal='true']")) {
+      closeVoiceHelpModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !els.voiceHelpModal.classList.contains("hidden")) {
+      closeVoiceHelpModal();
+    }
   });
 }
 
@@ -792,6 +817,7 @@ function setNoVoiceState(message) {
   els.voiceSelect.value = "";
   els.voiceStatus.textContent = message;
   els.voiceStatus.className = "small-text warning";
+  els.helpVoiceBtn.classList.remove("hidden");
 }
 
 function getSelectedItalianVoice() {
@@ -821,6 +847,7 @@ function updateVoiceStatus() {
 
   els.voiceStatus.textContent = `Voix sélectionnée : ${selectedVoice.name} (${selectedVoice.lang}).`;
   els.voiceStatus.className = "small-text success";
+  els.helpVoiceBtn.classList.add("hidden");
 }
 
 function speakItalian(text) {
@@ -842,6 +869,176 @@ function speakItalian(text) {
 
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(utterance);
+}
+
+function detectEnvironment() {
+  const ua = navigator.userAgent || "";
+  const platform = navigator.platform || "";
+
+  const isFirefox = /Firefox\/\d+/i.test(ua);
+  const isChrome = /Chrome\/\d+/i.test(ua) && !/Edg\/\d+/i.test(ua) && !/OPR\/\d+/i.test(ua);
+  const isEdge = /Edg\/\d+/i.test(ua);
+  const isSafari = /Safari\/\d+/i.test(ua) && !/Chrome\/\d+/i.test(ua) && !/CriOS\/\d+/i.test(ua);
+  const isAndroid = /Android/i.test(ua);
+  const isIOS = /iPhone|iPad|iPod/i.test(ua);
+  const isWindows = /Win/i.test(platform) || /Windows/i.test(ua);
+  const isMac = /Mac/i.test(platform) || /Mac OS X/i.test(ua);
+  const isLinux = /Linux/i.test(platform) && !isAndroid;
+
+  let browser = "navigateur inconnu";
+  if (isFirefox) browser = "Firefox";
+  else if (isEdge) browser = "Edge";
+  else if (isChrome) browser = "Chrome";
+  else if (isSafari) browser = "Safari";
+
+  let os = "système inconnu";
+  if (isWindows) os = "Windows";
+  else if (isMac) os = "macOS";
+  else if (isAndroid) os = "Android";
+  else if (isIOS) os = "iOS";
+  else if (isLinux) os = "Linux";
+
+  return {
+    browser,
+    os,
+    isFirefox,
+    isChrome,
+    isEdge,
+    isSafari,
+    isWindows,
+    isMac,
+    isAndroid,
+    isIOS,
+    isLinux
+  };
+}
+
+function openVoiceHelpModal() {
+  const env = detectEnvironment();
+  els.voiceHelpIntro.textContent = `Navigateur détecté : ${env.browser} · Système détecté : ${env.os}`;
+  els.voiceHelpContent.innerHTML = buildVoiceHelpHTML(env);
+
+  els.voiceHelpModal.classList.remove("hidden");
+  els.voiceHelpModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeVoiceHelpModal() {
+  els.voiceHelpModal.classList.add("hidden");
+  els.voiceHelpModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function buildVoiceHelpHTML(env) {
+  const genericEnd = `
+    <div class="help-block">
+      <h3>Après installation</h3>
+      <ol>
+        <li>Fermez complètement le navigateur si nécessaire.</li>
+        <li>Rouvrez l’application.</li>
+        <li>Cliquez sur « Actualiser les voix ».</li>
+        <li>Choisissez ensuite la voix italienne dans la liste.</li>
+      </ol>
+    </div>
+  `;
+
+  if (env.isWindows) {
+    return `
+      <div class="help-block">
+        <h3>Windows</h3>
+        <ol>
+          <li>Ouvrez les paramètres de langue de Windows.</li>
+          <li>Ajoutez la langue italienne si elle n’est pas déjà installée.</li>
+          <li>Activez les composants vocaux ou la synthèse vocale associés.</li>
+          <li>Redémarrez ensuite ${env.browser}.</li>
+        </ol>
+        <p>Sur Windows, les voix visibles dans le navigateur dépendent souvent des voix installées dans le système.</p>
+      </div>
+      ${env.isFirefox ? `
+      <div class="help-block">
+        <h3>Cas fréquent avec Firefox</h3>
+        <p>Firefox peut exposer moins de voix que d’autres navigateurs selon la configuration système.</p>
+        <p>Si aucune voix n’apparaît après installation sur Windows, testez aussi Edge ou Chrome sur la même machine.</p>
+      </div>` : ""}
+      ${genericEnd}
+    `;
+  }
+
+  if (env.isMac) {
+    return `
+      <div class="help-block">
+        <h3>macOS</h3>
+        <ol>
+          <li>Ouvrez les réglages système.</li>
+          <li>Allez dans les réglages d’accessibilité ou de contenu énoncé.</li>
+          <li>Ajoutez une voix italienne dans la liste des voix disponibles.</li>
+          <li>Relancez ensuite ${env.browser}.</li>
+        </ol>
+        <p>Sur macOS, Safari et les autres navigateurs peuvent utiliser les voix installées dans le système.</p>
+      </div>
+      ${genericEnd}
+    `;
+  }
+
+  if (env.isAndroid) {
+    return `
+      <div class="help-block">
+        <h3>Android</h3>
+        <ol>
+          <li>Ouvrez les paramètres du téléphone.</li>
+          <li>Recherchez « synthèse vocale » ou « texte vers la parole ».</li>
+          <li>Installez les données vocales italiennes du moteur utilisé.</li>
+          <li>Redémarrez ensuite ${env.browser} ou rechargez l’application.</li>
+        </ol>
+        <p>Selon le constructeur, le chemin exact peut varier.</p>
+      </div>
+      ${genericEnd}
+    `;
+  }
+
+  if (env.isIOS) {
+    return `
+      <div class="help-block">
+        <h3>iPhone ou iPad</h3>
+        <ol>
+          <li>Ouvrez les réglages de l’appareil.</li>
+          <li>Accédez aux options d’accessibilité liées au contenu énoncé.</li>
+          <li>Ajoutez une voix italienne.</li>
+          <li>Rechargez ensuite l’application dans ${env.browser}.</li>
+        </ol>
+        <p>Sur iOS, les possibilités dépendent fortement du moteur vocal fourni par le système.</p>
+      </div>
+      ${genericEnd}
+    `;
+  }
+
+  if (env.isLinux) {
+    return `
+      <div class="help-block">
+        <h3>Linux</h3>
+        <ol>
+          <li>Installez un moteur TTS compatible et une voix italienne au niveau du système.</li>
+          <li>Redémarrez le navigateur.</li>
+          <li>Revenez sur l’application et actualisez les voix.</li>
+        </ol>
+        <p>Le comportement varie beaucoup selon la distribution, le moteur vocal et le navigateur.</p>
+      </div>
+      ${genericEnd}
+    `;
+  }
+
+  return `
+    <div class="help-block">
+      <h3>Détection incomplète</h3>
+      <p>Le système ou le navigateur n’a pas pu être identifié avec certitude.</p>
+      <ol>
+        <li>Installez une voix italienne dans les paramètres système de l’appareil.</li>
+        <li>Redémarrez le navigateur.</li>
+        <li>Revenez dans l’application et actualisez les voix.</li>
+      </ol>
+    </div>
+    ${genericEnd}
+  `;
 }
 
 function exportStateToFile() {
