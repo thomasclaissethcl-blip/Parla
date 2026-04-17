@@ -58,6 +58,24 @@
             "scusi"
           ],
           "answer": "arrivederci"
+        },
+        {
+          "q": "Que signifie « ciao » ?",
+          "options": [
+            "salut",
+            "bonjour",
+            "bonsoir"
+          ],
+          "answer": "salut"
+        },
+        {
+          "q": "Comment dit-on « bonsoir » en italien ?",
+          "options": [
+            "buonasera",
+            "ciao",
+            "buongiorno"
+          ],
+          "answer": "buonasera"
         }
       ],
       "pathways": [
@@ -132,6 +150,24 @@
             "scusi"
           ],
           "answer": "grazie"
+        },
+        {
+          "q": "Que signifie « prego » ?",
+          "options": [
+            "je vous en prie",
+            "merci",
+            "excusez-moi"
+          ],
+          "answer": "je vous en prie"
+        },
+        {
+          "q": "Comment dit-on « excusez-moi » en italien ?",
+          "options": [
+            "scusi",
+            "grazie",
+            "prego"
+          ],
+          "answer": "scusi"
         }
       ],
       "pathways": [
@@ -206,6 +242,24 @@
             "sto bene"
           ],
           "answer": "mi chiamo"
+        },
+        {
+          "q": "Que signifie « sono » ?",
+          "options": [
+            "je suis",
+            "je m’appelle",
+            "enchanté"
+          ],
+          "answer": "je suis"
+        },
+        {
+          "q": "Comment dit-on « enchanté » en italien ?",
+          "options": [
+            "piacere",
+            "mi chiamo",
+            "sono"
+          ],
+          "answer": "piacere"
         }
       ],
       "pathways": [
@@ -275,6 +329,24 @@
             "je m’appelle"
           ],
           "answer": "je vais bien"
+        },
+        {
+          "q": "Que signifie « come stai » ?",
+          "options": [
+            "comment vas-tu",
+            "comment allez-vous",
+            "je vais bien"
+          ],
+          "answer": "comment vas-tu"
+        },
+        {
+          "q": "Comment dit-on « comment allez-vous » en italien ?",
+          "options": [
+            "come sta",
+            "come stai",
+            "sto bene"
+          ],
+          "answer": "come sta"
         }
       ],
       "pathways": [
@@ -339,6 +411,24 @@
             "vado"
           ],
           "answer": "vorrei"
+        },
+        {
+          "q": "Que signifie « un caffè » ?",
+          "options": [
+            "un café",
+            "je voudrais",
+            "combien cela coûte"
+          ],
+          "answer": "un café"
+        },
+        {
+          "q": "Comment dit-on « combien cela coûte » en italien ?",
+          "options": [
+            "quanto costa",
+            "un caffè",
+            "vorrei"
+          ],
+          "answer": "quanto costa"
         }
       ],
       "pathways": [
@@ -403,6 +493,24 @@
             "la stazione"
           ],
           "answer": "il conto"
+        },
+        {
+          "q": "Que signifie « il menù » ?",
+          "options": [
+            "le menu",
+            "je voudrais commander",
+            "eau plate"
+          ],
+          "answer": "le menu"
+        },
+        {
+          "q": "Comment dit-on « je voudrais commander » en italien ?",
+          "options": [
+            "vorrei ordinare",
+            "il menù",
+            "acqua naturale"
+          ],
+          "answer": "vorrei ordinare"
         }
       ],
       "pathways": [
@@ -467,6 +575,24 @@
             "j’ai une valise"
           ],
           "answer": "j’ai une réservation"
+        },
+        {
+          "q": "Que signifie « una camera » ?",
+          "options": [
+            "une chambre",
+            "j’ai une réservation",
+            "pour deux nuits"
+          ],
+          "answer": "une chambre"
+        },
+        {
+          "q": "Comment dit-on « pour deux nuits » en italien ?",
+          "options": [
+            "per due notti",
+            "una camera",
+            "ho una prenotazione"
+          ],
+          "answer": "per due notti"
         }
       ],
       "pathways": [
@@ -526,6 +652,24 @@
             "una camera"
           ],
           "answer": "un biglietto"
+        },
+        {
+          "q": "Que signifie « la stazione » ?",
+          "options": [
+            "la gare",
+            "un billet",
+            "à quelle heure cela part"
+          ],
+          "answer": "la gare"
+        },
+        {
+          "q": "Comment dit-on « à quelle heure cela part » en italien ?",
+          "options": [
+            "a che ora parte",
+            "la stazione",
+            "un biglietto"
+          ],
+          "answer": "a che ora parte"
         }
       ],
       "pathways": [
@@ -585,6 +729,24 @@
             "tout droit"
           ],
           "answer": "à gauche"
+        },
+        {
+          "q": "Que signifie « a destra » ?",
+          "options": [
+            "à droite",
+            "à gauche",
+            "tout droit"
+          ],
+          "answer": "à droite"
+        },
+        {
+          "q": "Comment dit-on « tout droit » en italien ?",
+          "options": [
+            "sempre dritto",
+            "a destra",
+            "a sinistra"
+          ],
+          "answer": "sempre dritto"
         }
       ],
       "pathways": [
@@ -644,6 +806,24 @@
             "ieri"
           ],
           "answer": "stasera"
+        },
+        {
+          "q": "Que signifie « vuoi uscire » ?",
+          "options": [
+            "tu veux sortir",
+            "allons-y",
+            "ce soir"
+          ],
+          "answer": "tu veux sortir"
+        },
+        {
+          "q": "Comment dit-on « allons-y » en italien ?",
+          "options": [
+            "andiamo",
+            "vuoi uscire",
+            "stasera"
+          ],
+          "answer": "andiamo"
         }
       ],
       "pathways": [
@@ -703,6 +883,24 @@
             "finisco"
           ],
           "answer": "preferisco"
+        },
+        {
+          "q": "Que signifie « mi piace » ?",
+          "options": [
+            "j’aime",
+            "je n’aime pas",
+            "j’adore"
+          ],
+          "answer": "j’aime"
+        },
+        {
+          "q": "Comment dit-on « je n’aime pas » en italien ?",
+          "options": [
+            "non mi piace",
+            "mi piace",
+            "adoro"
+          ],
+          "answer": "non mi piace"
         }
       ],
       "pathways": [
@@ -767,6 +965,24 @@
             "mia madre"
           ],
           "answer": "mia sorella"
+        },
+        {
+          "q": "Que signifie « la mia famiglia » ?",
+          "options": [
+            "ma famille",
+            "mon frère",
+            "ma sœur"
+          ],
+          "answer": "ma famille"
+        },
+        {
+          "q": "Comment dit-on « mon frère » en italien ?",
+          "options": [
+            "mio fratello",
+            "la mia famiglia",
+            "mia sorella"
+          ],
+          "answer": "mio fratello"
         }
       ],
       "pathways": [
@@ -826,6 +1042,24 @@
             "quel âge as-tu"
           ],
           "answer": "quel métier fais-tu"
+        },
+        {
+          "q": "Que signifie « lavoro in » ?",
+          "options": [
+            "je travaille dans",
+            "quel métier fais-tu",
+            "je suis enseignant"
+          ],
+          "answer": "je travaille dans"
+        },
+        {
+          "q": "Comment dit-on « je suis enseignant » en italien ?",
+          "options": [
+            "sono insegnante",
+            "che lavoro fai",
+            "lavoro in"
+          ],
+          "answer": "sono insegnante"
         }
       ],
       "pathways": [
@@ -890,6 +1124,24 @@
             "una mostra"
           ],
           "answer": "un film"
+        },
+        {
+          "q": "Que signifie « il cinema » ?",
+          "options": [
+            "le cinéma",
+            "un film",
+            "l’acteur"
+          ],
+          "answer": "le cinéma"
+        },
+        {
+          "q": "Comment dit-on « l’acteur » en italien ?",
+          "options": [
+            "l’attore",
+            "il cinema",
+            "un film"
+          ],
+          "answer": "l’attore"
         }
       ],
       "pathways": [
@@ -954,6 +1206,24 @@
             "lire"
           ],
           "answer": "écouter"
+        },
+        {
+          "q": "Que signifie « la musica classica » ?",
+          "options": [
+            "la musique classique",
+            "le jazz",
+            "un chanteur"
+          ],
+          "answer": "la musique classique"
+        },
+        {
+          "q": "Comment dit-on « le jazz » en italien ?",
+          "options": [
+            "il jazz",
+            "la musica classica",
+            "un cantante"
+          ],
+          "answer": "il jazz"
         }
       ],
       "pathways": [
@@ -1018,6 +1288,24 @@
             "cantare"
           ],
           "answer": "leggere"
+        },
+        {
+          "q": "Que signifie « un libro » ?",
+          "options": [
+            "un livre",
+            "un écrivain",
+            "un roman"
+          ],
+          "answer": "un livre"
+        },
+        {
+          "q": "Comment dit-on « un écrivain » en italien ?",
+          "options": [
+            "uno scrittore",
+            "un libro",
+            "un romanzo"
+          ],
+          "answer": "uno scrittore"
         }
       ],
       "pathways": [
@@ -1077,6 +1365,24 @@
             "c’est très loin"
           ],
           "answer": "cela vaut la peine"
+        },
+        {
+          "q": "Que signifie « il museo » ?",
+          "options": [
+            "le musée",
+            "une œuvre",
+            "l’exposition"
+          ],
+          "answer": "le musée"
+        },
+        {
+          "q": "Comment dit-on « une œuvre » en italien ?",
+          "options": [
+            "un’opera",
+            "il museo",
+            "la mostra"
+          ],
+          "answer": "un’opera"
         }
       ],
       "pathways": [
@@ -1141,6 +1447,24 @@
             "la scuola"
           ],
           "answer": "la legge"
+        },
+        {
+          "q": "Que signifie « il governo » ?",
+          "options": [
+            "le gouvernement",
+            "le parlement",
+            "le président"
+          ],
+          "answer": "le gouvernement"
+        },
+        {
+          "q": "Comment dit-on « le parlement » en italien ?",
+          "options": [
+            "il parlamento",
+            "il governo",
+            "il presidente"
+          ],
+          "answer": "il parlamento"
         }
       ],
       "pathways": [
@@ -1200,6 +1524,24 @@
             "avec moi"
           ],
           "answer": "selon moi"
+        },
+        {
+          "q": "Que signifie « sono d’accordo » ?",
+          "options": [
+            "je suis d’accord",
+            "je ne suis pas d’accord",
+            "selon moi"
+          ],
+          "answer": "je suis d’accord"
+        },
+        {
+          "q": "Comment dit-on « je ne suis pas d’accord » en italien ?",
+          "options": [
+            "non sono d’accordo",
+            "sono d’accordo",
+            "secondo me"
+          ],
+          "answer": "non sono d’accordo"
         }
       ],
       "pathways": [
@@ -1269,6 +1611,24 @@
             "i salari"
           ],
           "answer": "i diritti"
+        },
+        {
+          "q": "Que signifie « la scuola » ?",
+          "options": [
+            "l’école",
+            "le travail",
+            "la santé"
+          ],
+          "answer": "l’école"
+        },
+        {
+          "q": "Comment dit-on « le travail » en italien ?",
+          "options": [
+            "il lavoro",
+            "la scuola",
+            "la sanità"
+          ],
+          "answer": "il lavoro"
         }
       ],
       "pathways": [
@@ -1328,6 +1688,24 @@
             "je veux que"
           ],
           "answer": "je pense que"
+        },
+        {
+          "q": "Que signifie « perché » ?",
+          "options": [
+            "parce que",
+            "je pense que",
+            "d’un côté"
+          ],
+          "answer": "parce que"
+        },
+        {
+          "q": "Comment dit-on « d’un côté » en italien ?",
+          "options": [
+            "da un lato",
+            "penso che",
+            "perché"
+          ],
+          "answer": "da un lato"
         }
       ],
       "pathways": [
@@ -1392,6 +1770,24 @@
             "tu sei"
           ],
           "answer": "e tu"
+        },
+        {
+          "q": "Que signifie « davvero » ?",
+          "options": [
+            "vraiment",
+            "intéressant",
+            "et toi"
+          ],
+          "answer": "vraiment"
+        },
+        {
+          "q": "Comment dit-on « intéressant » en italien ?",
+          "options": [
+            "interessante",
+            "davvero",
+            "e tu"
+          ],
+          "answer": "interessante"
         }
       ],
       "pathways": [
@@ -1461,6 +1857,24 @@
             "maintenant"
           ],
           "answer": "peut-être"
+        },
+        {
+          "q": "Que signifie « non sempre » ?",
+          "options": [
+            "pas toujours",
+            "peut-être",
+            "en partie"
+          ],
+          "answer": "pas toujours"
+        },
+        {
+          "q": "Comment dit-on « en partie » en italien ?",
+          "options": [
+            "in parte",
+            "forse",
+            "non sempre"
+          ],
+          "answer": "in parte"
         }
       ],
       "pathways": [
@@ -1530,6 +1944,24 @@
             "dieci"
           ],
           "answer": "due"
+        },
+        {
+          "q": "Que signifie « uno » ?",
+          "options": [
+            "un",
+            "deux",
+            "trois"
+          ],
+          "answer": "un"
+        },
+        {
+          "q": "Comment dit-on « trois » en italien ?",
+          "options": [
+            "tre",
+            "uno",
+            "due"
+          ],
+          "answer": "tre"
         }
       ],
       "pathways": [
@@ -1594,6 +2026,24 @@
             "j’aime la France"
           ],
           "answer": "je viens de France"
+        },
+        {
+          "q": "Que signifie « sono francese » ?",
+          "options": [
+            "je suis français",
+            "je suis italienne",
+            "je viens de France"
+          ],
+          "answer": "je suis français"
+        },
+        {
+          "q": "Comment dit-on « je suis italienne » en italien ?",
+          "options": [
+            "sono italiana",
+            "sono francese",
+            "vengo dalla Francia"
+          ],
+          "answer": "sono italiana"
         }
       ],
       "pathways": [
@@ -1658,6 +2108,24 @@
             "dove abiti"
           ],
           "answer": "quanti anni hai"
+        },
+        {
+          "q": "Que signifie « ho vent’anni » ?",
+          "options": [
+            "j’ai vingt ans",
+            "quel âge as-tu",
+            "j’ai trente ans"
+          ],
+          "answer": "j’ai vingt ans"
+        },
+        {
+          "q": "Comment dit-on « j’ai trente ans » en italien ?",
+          "options": [
+            "ho trent’anni",
+            "quanti anni hai",
+            "ho vent’anni"
+          ],
+          "answer": "ho trent’anni"
         }
       ],
       "pathways": [
@@ -1717,6 +2185,24 @@
             "venerdì"
           ],
           "answer": "sabato"
+        },
+        {
+          "q": "Que signifie « lunedì » ?",
+          "options": [
+            "lundi",
+            "mardi",
+            "vendredi"
+          ],
+          "answer": "lundi"
+        },
+        {
+          "q": "Comment dit-on « mardi » en italien ?",
+          "options": [
+            "martedì",
+            "lunedì",
+            "venerdì"
+          ],
+          "answer": "martedì"
         }
       ],
       "pathways": [
@@ -1781,6 +2267,24 @@
             "où allons-nous"
           ],
           "answer": "quelle heure est-il"
+        },
+        {
+          "q": "Que signifie « è l’una » ?",
+          "options": [
+            "il est une heure",
+            "quelle heure est-il",
+            "il est deux heures"
+          ],
+          "answer": "il est une heure"
+        },
+        {
+          "q": "Comment dit-on « il est deux heures » en italien ?",
+          "options": [
+            "sono le due",
+            "che ora è",
+            "è l’una"
+          ],
+          "answer": "sono le due"
         }
       ],
       "pathways": [
@@ -1845,6 +2349,24 @@
             "chaud ou froid"
           ],
           "answer": "carte ou espèces"
+        },
+        {
+          "q": "Que signifie « quanto viene » ?",
+          "options": [
+            "combien cela coûte",
+            "je le prends",
+            "carte ou espèces"
+          ],
+          "answer": "combien cela coûte"
+        },
+        {
+          "q": "Comment dit-on « je le prends » en italien ?",
+          "options": [
+            "lo prendo",
+            "quanto viene",
+            "carta o contanti"
+          ],
+          "answer": "lo prendo"
         }
       ],
       "pathways": [
@@ -1904,6 +2426,24 @@
             "troppo zucchero"
           ],
           "answer": "senza zucchero"
+        },
+        {
+          "q": "Que signifie « un cappuccino » ?",
+          "options": [
+            "un cappuccino",
+            "un croissant",
+            "sans sucre"
+          ],
+          "answer": "un cappuccino"
+        },
+        {
+          "q": "Comment dit-on « un croissant » en italien ?",
+          "options": [
+            "un cornetto",
+            "un cappuccino",
+            "senza zucchero"
+          ],
+          "answer": "un cornetto"
         }
       ],
       "pathways": [
@@ -1963,6 +2503,24 @@
             "il fait beau"
           ],
           "answer": "il pleut"
+        },
+        {
+          "q": "Que signifie « fa caldo » ?",
+          "options": [
+            "il fait chaud",
+            "il fait froid",
+            "il pleut"
+          ],
+          "answer": "il fait chaud"
+        },
+        {
+          "q": "Comment dit-on « il fait froid » en italien ?",
+          "options": [
+            "fa freddo",
+            "fa caldo",
+            "piove"
+          ],
+          "answer": "fa freddo"
         }
       ],
       "pathways": [
@@ -2027,6 +2585,24 @@
             "la strada"
           ],
           "answer": "la cucina"
+        },
+        {
+          "q": "Que signifie « un appartamento » ?",
+          "options": [
+            "un appartement",
+            "une maison",
+            "la cuisine"
+          ],
+          "answer": "un appartement"
+        },
+        {
+          "q": "Comment dit-on « une maison » en italien ?",
+          "options": [
+            "una casa",
+            "un appartamento",
+            "la cucina"
+          ],
+          "answer": "una casa"
         }
       ],
       "pathways": [
@@ -2086,6 +2662,24 @@
             "je pars en voyage"
           ],
           "answer": "je rentre à la maison"
+        },
+        {
+          "q": "Que signifie « mi sveglio » ?",
+          "options": [
+            "je me réveille",
+            "je prends le petit-déjeuner",
+            "je travaille"
+          ],
+          "answer": "je me réveille"
+        },
+        {
+          "q": "Comment dit-on « je prends le petit-déjeuner » en italien ?",
+          "options": [
+            "faccio colazione",
+            "mi sveglio",
+            "lavoro"
+          ],
+          "answer": "faccio colazione"
         }
       ],
       "pathways": [
@@ -2145,6 +2739,24 @@
             "parlo sport"
           ],
           "answer": "faccio sport"
+        },
+        {
+          "q": "Que signifie « nel tempo libero » ?",
+          "options": [
+            "pendant le temps libre",
+            "je fais du sport",
+            "je regarde des séries"
+          ],
+          "answer": "pendant le temps libre"
+        },
+        {
+          "q": "Comment dit-on « je regarde des séries » en italien ?",
+          "options": [
+            "guardo serie",
+            "nel tempo libero",
+            "faccio sport"
+          ],
+          "answer": "guardo serie"
         }
       ],
       "pathways": [
@@ -2209,6 +2821,24 @@
             "oublie mon numéro"
           ],
           "answer": "envoie-moi un message"
+        },
+        {
+          "q": "Que signifie « qual è il tuo numero » ?",
+          "options": [
+            "quel est ton numéro",
+            "je te le répète",
+            "écris-moi"
+          ],
+          "answer": "quel est ton numéro"
+        },
+        {
+          "q": "Comment dit-on « je te le répète » en italien ?",
+          "options": [
+            "te lo ripeto",
+            "qual è il tuo numero",
+            "scrivimi"
+          ],
+          "answer": "te lo ripeto"
         }
       ],
       "pathways": [
@@ -2268,6 +2898,24 @@
             "un numero segreto"
           ],
           "answer": "un messaggio privato"
+        },
+        {
+          "q": "Que signifie « seguimi » ?",
+          "options": [
+            "suis-moi",
+            "un profil",
+            "je publie des photos"
+          ],
+          "answer": "suis-moi"
+        },
+        {
+          "q": "Comment dit-on « un profil » en italien ?",
+          "options": [
+            "un profilo",
+            "seguimi",
+            "pubblico foto"
+          ],
+          "answer": "un profilo"
         }
       ],
       "pathways": [
@@ -2327,6 +2975,24 @@
             "je vais revenir"
           ],
           "answer": "c’est bon comme ça"
+        },
+        {
+          "q": "Que signifie « un chilo » ?",
+          "options": [
+            "un kilo",
+            "un demi-kilo",
+            "combien en voulez-vous"
+          ],
+          "answer": "un kilo"
+        },
+        {
+          "q": "Comment dit-on « un demi-kilo » en italien ?",
+          "options": [
+            "mezzo chilo",
+            "un chilo",
+            "quanto ne vuole"
+          ],
+          "answer": "mezzo chilo"
         }
       ],
       "pathways": [
@@ -2386,6 +3052,24 @@
             "ho una domanda"
           ],
           "answer": "ho un problema"
+        },
+        {
+          "q": "Que signifie « mi può aiutare » ?",
+          "options": [
+            "pouvez-vous m’aider",
+            "j’ai un problème",
+            "j’ai perdu"
+          ],
+          "answer": "pouvez-vous m’aider"
+        },
+        {
+          "q": "Comment dit-on « j’ai perdu » en italien ?",
+          "options": [
+            "ho perso",
+            "ho un problema",
+            "mi può aiutare"
+          ],
+          "answer": "ho perso"
         }
       ],
       "pathways": [
@@ -2445,6 +3129,24 @@
             "sans paiement"
           ],
           "answer": "sans ordonnance"
+        },
+        {
+          "q": "Que signifie « la farmacia » ?",
+          "options": [
+            "la pharmacie",
+            "j’ai mal à la tête",
+            "un médicament"
+          ],
+          "answer": "la pharmacie"
+        },
+        {
+          "q": "Comment dit-on « j’ai mal à la tête » en italien ?",
+          "options": [
+            "ho mal di testa",
+            "la farmacia",
+            "una medicina"
+          ],
+          "answer": "ho mal di testa"
         }
       ],
       "pathways": [
@@ -2504,6 +3206,24 @@
             "in ufficio"
           ],
           "answer": "in ritardo"
+        },
+        {
+          "q": "Que signifie « il binario » ?",
+          "options": [
+            "la voie",
+            "en retard",
+            "annulé"
+          ],
+          "answer": "la voie"
+        },
+        {
+          "q": "Comment dit-on « annulé » en italien ?",
+          "options": [
+            "cancellato",
+            "il binario",
+            "in ritardo"
+          ],
+          "answer": "cancellato"
         }
       ],
       "pathways": [
@@ -2563,6 +3283,24 @@
             "au-dessus de"
           ],
           "answer": "en face de"
+        },
+        {
+          "q": "Que signifie « l’angolo » ?",
+          "options": [
+            "le coin de rue",
+            "le carrefour",
+            "en face de"
+          ],
+          "answer": "le coin de rue"
+        },
+        {
+          "q": "Comment dit-on « le carrefour » en italien ?",
+          "options": [
+            "l’incrocio",
+            "l’angolo",
+            "di fronte a"
+          ],
+          "answer": "l’incrocio"
         }
       ],
       "pathways": [
@@ -2622,6 +3360,24 @@
             "nous travaillons ensemble"
           ],
           "answer": "nous avons beaucoup en commun"
+        },
+        {
+          "q": "Que signifie « un amico stretto » ?",
+          "options": [
+            "un ami proche",
+            "nous nous connaissons depuis des années",
+            "nous nous entendons bien"
+          ],
+          "answer": "un ami proche"
+        },
+        {
+          "q": "Comment dit-on « nous nous connaissons depuis des années » en italien ?",
+          "options": [
+            "ci conosciamo da anni",
+            "un amico stretto",
+            "andiamo d’accordo"
+          ],
+          "answer": "ci conosciamo da anni"
         }
       ],
       "pathways": [
@@ -2681,6 +3437,24 @@
             "sono pronto"
           ],
           "answer": "sono preoccupato"
+        },
+        {
+          "q": "Que signifie « sono felice » ?",
+          "options": [
+            "je suis heureux",
+            "je suis inquiet",
+            "je suis fatigué"
+          ],
+          "answer": "je suis heureux"
+        },
+        {
+          "q": "Comment dit-on « je suis fatigué » en italien ?",
+          "options": [
+            "sono stanco",
+            "sono felice",
+            "sono preoccupato"
+          ],
+          "answer": "sono stanco"
         }
       ],
       "pathways": [
@@ -2740,6 +3514,24 @@
             "le mois prochain"
           ],
           "answer": "l’année prochaine"
+        },
+        {
+          "q": "Que signifie « vorrei cambiare lavoro » ?",
+          "options": [
+            "je voudrais changer de travail",
+            "je suis en train de penser à",
+            "l’année prochaine"
+          ],
+          "answer": "je voudrais changer de travail"
+        },
+        {
+          "q": "Comment dit-on « je suis en train de penser à » en italien ?",
+          "options": [
+            "sto pensando di",
+            "vorrei cambiare lavoro",
+            "l’anno prossimo"
+          ],
+          "answer": "sto pensando di"
         }
       ],
       "pathways": [
@@ -2799,6 +3591,24 @@
             "tu plaisantes"
           ],
           "answer": "tu as raison"
+        },
+        {
+          "q": "Que signifie « non ne sono sicuro » ?",
+          "options": [
+            "je n’en suis pas sûr",
+            "tu as raison",
+            "quel dommage"
+          ],
+          "answer": "je n’en suis pas sûr"
+        },
+        {
+          "q": "Comment dit-on « quel dommage » en italien ?",
+          "options": [
+            "che peccato",
+            "hai ragione",
+            "non ne sono sicuro"
+          ],
+          "answer": "che peccato"
         }
       ],
       "pathways": [
@@ -2863,6 +3673,24 @@
             "non posso venire"
           ],
           "answer": "va bene per me"
+        },
+        {
+          "q": "Que signifie « sei libero domani » ?",
+          "options": [
+            "es-tu libre demain",
+            "on se voit vers huit heures",
+            "cela me convient"
+          ],
+          "answer": "es-tu libre demain"
+        },
+        {
+          "q": "Comment dit-on « on se voit vers huit heures » en italien ?",
+          "options": [
+            "ci vediamo verso le otto",
+            "sei libero domani",
+            "va bene per me"
+          ],
+          "answer": "ci vediamo verso le otto"
         }
       ],
       "pathways": [
@@ -2922,6 +3750,24 @@
             "cela m’a surpris négativement"
           ],
           "answer": "cela m’a marqué"
+        },
+        {
+          "q": "Que signifie « la trama » ?",
+          "options": [
+            "l’intrigue",
+            "captivant",
+            "lent"
+          ],
+          "answer": "l’intrigue"
+        },
+        {
+          "q": "Comment dit-on « captivant » en italien ?",
+          "options": [
+            "coinvolgente",
+            "la trama",
+            "lento"
+          ],
+          "answer": "coinvolgente"
         }
       ],
       "pathways": [
@@ -2981,6 +3827,24 @@
             "la scena"
           ],
           "answer": "la melodia"
+        },
+        {
+          "q": "Que signifie « il ritmo » ?",
+          "options": [
+            "le rythme",
+            "la mélodie",
+            "des paroles profondes"
+          ],
+          "answer": "le rythme"
+        },
+        {
+          "q": "Comment dit-on « des paroles profondes » en italien ?",
+          "options": [
+            "testi profondi",
+            "il ritmo",
+            "la melodia"
+          ],
+          "answer": "testi profondi"
         }
       ],
       "pathways": [
@@ -3040,6 +3904,24 @@
             "une bande-annonce"
           ],
           "answer": "un épisode"
+        },
+        {
+          "q": "Que signifie « una serie » ?",
+          "options": [
+            "une série",
+            "un épisode",
+            "la saison"
+          ],
+          "answer": "une série"
+        },
+        {
+          "q": "Comment dit-on « la saison » en italien ?",
+          "options": [
+            "la stagione",
+            "una serie",
+            "un episodio"
+          ],
+          "answer": "la stagione"
         }
       ],
       "pathways": [
@@ -3104,6 +3986,24 @@
             "il y a longtemps"
           ],
           "answer": "encore aujourd’hui"
+        },
+        {
+          "q": "Que signifie « nel passato » ?",
+          "options": [
+            "dans le passé",
+            "un événement historique",
+            "cela s’est passé en"
+          ],
+          "answer": "dans le passé"
+        },
+        {
+          "q": "Comment dit-on « un événement historique » en italien ?",
+          "options": [
+            "un evento storico",
+            "nel passato",
+            "è successo nel"
+          ],
+          "answer": "un evento storico"
         }
       ],
       "pathways": [
@@ -3168,6 +4068,24 @@
             "cela coûte très cher"
           ],
           "answer": "cela attire de nombreux visiteurs"
+        },
+        {
+          "q": "Que signifie « un monumento » ?",
+          "options": [
+            "un monument",
+            "bien conservé",
+            "cela remonte au Moyen Âge"
+          ],
+          "answer": "un monument"
+        },
+        {
+          "q": "Comment dit-on « bien conservé » en italien ?",
+          "options": [
+            "ben conservato",
+            "un monumento",
+            "risale al medioevo"
+          ],
+          "answer": "ben conservato"
         }
       ],
       "pathways": [
@@ -3232,6 +4150,24 @@
             "le regioni"
           ],
           "answer": "le elezioni"
+        },
+        {
+          "q": "Que signifie « un titolo » ?",
+          "options": [
+            "un titre",
+            "les élections",
+            "un sondage"
+          ],
+          "answer": "un titre"
+        },
+        {
+          "q": "Comment dit-on « un sondage » en italien ?",
+          "options": [
+            "un sondaggio",
+            "un titolo",
+            "le elezioni"
+          ],
+          "answer": "un sondaggio"
         }
       ],
       "pathways": [
@@ -3291,6 +4227,24 @@
             "le service public"
           ],
           "answer": "le bien commun"
+        },
+        {
+          "q": "Que signifie « i cittadini » ?",
+          "options": [
+            "les citoyens",
+            "participer",
+            "la vie publique"
+          ],
+          "answer": "les citoyens"
+        },
+        {
+          "q": "Comment dit-on « participer » en italien ?",
+          "options": [
+            "partecipare",
+            "i cittadini",
+            "la vita pubblica"
+          ],
+          "answer": "partecipare"
         }
       ],
       "pathways": [
@@ -3350,6 +4304,24 @@
             "una funzione"
           ],
           "answer": "una regione"
+        },
+        {
+          "q": "Que signifie « il nord » ?",
+          "options": [
+            "le nord",
+            "le sud",
+            "une région"
+          ],
+          "answer": "le nord"
+        },
+        {
+          "q": "Comment dit-on « le sud » en italien ?",
+          "options": [
+            "il sud",
+            "il nord",
+            "una regione"
+          ],
+          "answer": "il sud"
         }
       ],
       "pathways": [
@@ -3409,6 +4381,24 @@
             "la retraite"
           ],
           "answer": "la précarité"
+        },
+        {
+          "q": "Que signifie « il contratto » ?",
+          "options": [
+            "le contrat",
+            "le salaire",
+            "la précarité"
+          ],
+          "answer": "le contrat"
+        },
+        {
+          "q": "Comment dit-on « le salaire » en italien ?",
+          "options": [
+            "lo stipendio",
+            "il contratto",
+            "la precarietà"
+          ],
+          "answer": "lo stipendio"
         }
       ],
       "pathways": [
@@ -3468,6 +4458,24 @@
             "la produzione"
           ],
           "answer": "l’inquinamento"
+        },
+        {
+          "q": "Que signifie « l’ambiente » ?",
+          "options": [
+            "l’environnement",
+            "la pollution",
+            "les énergies renouvelables"
+          ],
+          "answer": "l’environnement"
+        },
+        {
+          "q": "Comment dit-on « les énergies renouvelables » en italien ?",
+          "options": [
+            "le energie rinnovabili",
+            "l’ambiente",
+            "l’inquinamento"
+          ],
+          "answer": "le energie rinnovabili"
         }
       ],
       "pathways": [
@@ -3532,6 +4540,24 @@
             "service minimum"
           ],
           "answer": "égalité des chances"
+        },
+        {
+          "q": "Que signifie « l’istruzione » ?",
+          "options": [
+            "l’éducation",
+            "l’université",
+            "la formation"
+          ],
+          "answer": "l’éducation"
+        },
+        {
+          "q": "Comment dit-on « l’université » en italien ?",
+          "options": [
+            "l’università",
+            "l’istruzione",
+            "la formazione"
+          ],
+          "answer": "l’università"
         }
       ],
       "pathways": [
@@ -3591,6 +4617,24 @@
             "una voce pubblica"
           ],
           "answer": "una fonte affidabile"
+        },
+        {
+          "q": "Que signifie « i media » ?",
+          "options": [
+            "les médias",
+            "une source fiable",
+            "vérifier les informations"
+          ],
+          "answer": "les médias"
+        },
+        {
+          "q": "Comment dit-on « vérifier les informations » en italien ?",
+          "options": [
+            "verificare le informazioni",
+            "i media",
+            "una fonte affidabile"
+          ],
+          "answer": "verificare le informazioni"
         }
       ],
       "pathways": [
@@ -3655,6 +4699,24 @@
             "d’abord"
           ],
           "answer": "toutefois"
+        },
+        {
+          "q": "Que signifie « capisco il tuo punto di vista » ?",
+          "options": [
+            "je comprends ton point de vue",
+            "toutefois",
+            "il reste que"
+          ],
+          "answer": "je comprends ton point de vue"
+        },
+        {
+          "q": "Comment dit-on « il reste que » en italien ?",
+          "options": [
+            "resta il fatto che",
+            "capisco il tuo punto di vista",
+            "tuttavia"
+          ],
+          "answer": "resta il fatto che"
         }
       ],
       "pathways": [
@@ -3719,6 +4781,24 @@
             "in questione"
           ],
           "answer": "in conclusione"
+        },
+        {
+          "q": "Que signifie « prima di tutto » ?",
+          "options": [
+            "tout d’abord",
+            "de plus",
+            "en même temps"
+          ],
+          "answer": "tout d’abord"
+        },
+        {
+          "q": "Comment dit-on « de plus » en italien ?",
+          "options": [
+            "inoltre",
+            "prima di tutto",
+            "allo stesso tempo"
+          ],
+          "answer": "inoltre"
         }
       ],
       "pathways": [
@@ -3788,6 +4868,24 @@
             "dans un autre lieu"
           ],
           "answer": "en d’autres termes"
+        },
+        {
+          "q": "Que signifie « voglio dire che » ?",
+          "options": [
+            "je veux dire que",
+            "en d’autres termes",
+            "je m’explique mieux"
+          ],
+          "answer": "je veux dire que"
+        },
+        {
+          "q": "Comment dit-on « je m’explique mieux » en italien ?",
+          "options": [
+            "mi spiego meglio",
+            "voglio dire che",
+            "in altre parole"
+          ],
+          "answer": "mi spiego meglio"
         }
       ],
       "pathways": [
@@ -3852,6 +4950,24 @@
             "sto aspettando"
           ],
           "answer": "sto scherzando"
+        },
+        {
+          "q": "Que signifie « che battuta » ?",
+          "options": [
+            "quelle blague",
+            "je plaisante",
+            "dit avec ironie"
+          ],
+          "answer": "quelle blague"
+        },
+        {
+          "q": "Comment dit-on « dit avec ironie » en italien ?",
+          "options": [
+            "detto con ironia",
+            "sto scherzando",
+            "che battuta"
+          ],
+          "answer": "detto con ironia"
         }
       ],
       "pathways": [
@@ -3916,6 +5032,24 @@
             "bruyant"
           ],
           "answer": "fluide"
+        },
+        {
+          "q": "Que signifie « lo stile » ?",
+          "options": [
+            "le style",
+            "fluide",
+            "complexe"
+          ],
+          "answer": "le style"
+        },
+        {
+          "q": "Comment dit-on « complexe » en italien ?",
+          "options": [
+            "complesso",
+            "lo stile",
+            "scorrevole"
+          ],
+          "answer": "complesso"
         }
       ],
       "pathways": [
@@ -3975,6 +5109,24 @@
             "la collection"
           ],
           "answer": "la composition"
+        },
+        {
+          "q": "Que signifie « i colori dominanti » ?",
+          "options": [
+            "les couleurs dominantes",
+            "cela transmet une émotion",
+            "la composition"
+          ],
+          "answer": "les couleurs dominantes"
+        },
+        {
+          "q": "Comment dit-on « cela transmet une émotion » en italien ?",
+          "options": [
+            "trasmette un’emozione",
+            "i colori dominanti",
+            "la composizione"
+          ],
+          "answer": "trasmette un’emozione"
         }
       ],
       "pathways": [
@@ -4034,6 +5186,24 @@
             "au siècle dernier"
           ],
           "answer": "ces dernières années"
+        },
+        {
+          "q": "Que signifie « si è diffusa l’idea che » ?",
+          "options": [
+            "l’idée s’est répandue que",
+            "ces dernières années",
+            "cela a eu des conséquences concrètes"
+          ],
+          "answer": "l’idée s’est répandue que"
+        },
+        {
+          "q": "Comment dit-on « cela a eu des conséquences concrètes » en italien ?",
+          "options": [
+            "ha avuto conseguenze concrete",
+            "negli ultimi anni",
+            "si è diffusa l’idea che"
+          ],
+          "answer": "ha avuto conseguenze concrete"
         }
       ],
       "pathways": [
@@ -4093,6 +5263,24 @@
             "au niveau symbolique"
           ],
           "answer": "au niveau local"
+        },
+        {
+          "q": "Que signifie « a livello nazionale » ?",
+          "options": [
+            "au niveau national",
+            "au niveau local",
+            "elles ont des compétences différentes"
+          ],
+          "answer": "au niveau national"
+        },
+        {
+          "q": "Comment dit-on « elles ont des compétences différentes » en italien ?",
+          "options": [
+            "hanno competenze diverse",
+            "a livello locale",
+            "a livello nazionale"
+          ],
+          "answer": "hanno competenze diverse"
         }
       ],
       "pathways": [
@@ -4152,6 +5340,24 @@
             "ha scritto per"
           ],
           "answer": "ha spiegato che"
+        },
+        {
+          "q": "Que signifie « mi ha detto che » ?",
+          "options": [
+            "il m’a dit que",
+            "selon elle",
+            "il a expliqué que"
+          ],
+          "answer": "il m’a dit que"
+        },
+        {
+          "q": "Comment dit-on « selon elle » en italien ?",
+          "options": [
+            "secondo lei",
+            "mi ha detto che",
+            "ha spiegato che"
+          ],
+          "answer": "secondo lei"
         }
       ],
       "pathways": [
@@ -4216,6 +5422,24 @@
             "cela confirme peu"
           ],
           "answer": "cela montre que"
+        },
+        {
+          "q": "Que signifie « ti faccio un esempio concreto » ?",
+          "options": [
+            "je te donne un exemple concret",
+            "cela montre que",
+            "ce n’est pas seulement une question d’opinions"
+          ],
+          "answer": "je te donne un exemple concret"
+        },
+        {
+          "q": "Comment dit-on « ce n’est pas seulement une question d’opinions » en italien ?",
+          "options": [
+            "non è solo una questione di opinioni",
+            "ti faccio un esempio concreto",
+            "questo dimostra che"
+          ],
+          "answer": "non è solo una questione di opinioni"
         }
       ],
       "pathways": [
@@ -4280,6 +5504,24 @@
             "sur ce sujet"
           ],
           "answer": "cela dit"
+        },
+        {
+          "q": "Que signifie « l’obiezione è legittima » ?",
+          "options": [
+            "l’objection est légitime",
+            "cela dit",
+            "cela ne change pas le problème de fond"
+          ],
+          "answer": "l’objection est légitime"
+        },
+        {
+          "q": "Comment dit-on « cela ne change pas le problème de fond » en italien ?",
+          "options": [
+            "non cambia il problema di fondo",
+            "l’obiezione è legittima",
+            "detto questo"
+          ],
+          "answer": "non cambia il problema di fondo"
         }
       ],
       "pathways": [
@@ -4339,6 +5581,24 @@
             "cela résume un livre ancien"
           ],
           "answer": "cela aborde un sujet actuel"
+        },
+        {
+          "q": "Que signifie « il tono è accessibile » ?",
+          "options": [
+            "le ton est accessible",
+            "cela aborde un sujet actuel",
+            "les interventions sont bien construites"
+          ],
+          "answer": "le ton est accessible"
+        },
+        {
+          "q": "Comment dit-on « les interventions sont bien construites » en italien ?",
+          "options": [
+            "gli interventi sono ben costruiti",
+            "affronta un tema attuale",
+            "il tono è accessibile"
+          ],
+          "answer": "gli interventi sono ben costruiti"
         }
       ],
       "pathways": [
@@ -4398,6 +5658,24 @@
             "sans réfléchir"
           ],
           "answer": "avec le recul"
+        },
+        {
+          "q": "Que signifie « mi ricordo ancora » ?",
+          "options": [
+            "je m’en souviens encore",
+            "à l’époque",
+            "je ne me rendais pas compte que"
+          ],
+          "answer": "je m’en souviens encore"
+        },
+        {
+          "q": "Comment dit-on « à l’époque » en italien ?",
+          "options": [
+            "all’epoca",
+            "mi ricordo ancora",
+            "non mi rendevo conto che"
+          ],
+          "answer": "all’epoca"
         }
       ],
       "pathways": [
@@ -4457,6 +5735,24 @@
             "dipendo da"
           ],
           "answer": "faccio parte di"
+        },
+        {
+          "q": "Que signifie « mi sento legato a » ?",
+          "options": [
+            "je me sens lié à",
+            "je fais partie de",
+            "je ne me reconnais pas entièrement dans"
+          ],
+          "answer": "je me sens lié à"
+        },
+        {
+          "q": "Comment dit-on « je ne me reconnais pas entièrement dans » en italien ?",
+          "options": [
+            "non mi riconosco del tutto in",
+            "mi sento legato a",
+            "faccio parte di"
+          ],
+          "answer": "non mi riconosco del tutto in"
         }
       ],
       "pathways": [
@@ -4521,6 +5817,24 @@
             "c’est une règle imposée"
           ],
           "answer": "c’est un principe auquel je tiens"
+        },
+        {
+          "q": "Que signifie « do molta importanza a » ?",
+          "options": [
+            "j’accorde beaucoup d’importance à",
+            "pour moi, ce qui compte surtout",
+            "il ne s’agit pas seulement de"
+          ],
+          "answer": "j’accorde beaucoup d’importance à"
+        },
+        {
+          "q": "Comment dit-on « pour moi, ce qui compte surtout » en italien ?",
+          "options": [
+            "per me conta soprattutto",
+            "do molta importanza a",
+            "non si tratta solo di"
+          ],
+          "answer": "per me conta soprattutto"
         }
       ],
       "pathways": [
@@ -4585,6 +5899,24 @@
             "les faits sont incertains"
           ],
           "answer": "les causes sont multiples"
+        },
+        {
+          "q": "Que signifie « non si può generalizzare » ?",
+          "options": [
+            "on ne peut pas généraliser",
+            "la situation varie beaucoup",
+            "cela dépend des groupes sociaux concernés"
+          ],
+          "answer": "on ne peut pas généraliser"
+        },
+        {
+          "q": "Comment dit-on « la situation varie beaucoup » en italien ?",
+          "options": [
+            "la situazione varia molto",
+            "non si può generalizzare",
+            "dipende dai gruppi sociali coinvolti"
+          ],
+          "answer": "la situazione varia molto"
         }
       ],
       "pathways": [
@@ -4644,6 +5976,24 @@
             "ils disparaissent à cause de"
           ],
           "answer": "ils se distinguent par"
+        },
+        {
+          "q": "Que signifie « presentano punti in comune » ?",
+          "options": [
+            "ils présentent des points communs",
+            "ils se distinguent par",
+            "l’un mise sur"
+          ],
+          "answer": "ils présentent des points communs"
+        },
+        {
+          "q": "Comment dit-on « l’un mise sur » en italien ?",
+          "options": [
+            "uno punta su",
+            "presentano punti in comune",
+            "si distinguono per"
+          ],
+          "answer": "uno punta su"
         }
       ],
       "pathways": [
