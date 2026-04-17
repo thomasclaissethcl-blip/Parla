@@ -108,6 +108,15 @@ const els = {
   voiceHelpIntro: document.getElementById("voiceHelpIntro"),
   voiceHelpContent: document.getElementById("voiceHelpContent"),
     lessonCatalogSection: document.getElementById("lessonCatalogSection"),
+  avatarBtn: document.getElementById("avatarBtn"),
+settingsBtn: document.getElementById("settingsBtn"),
+saveBtn: document.getElementById("saveBtn"),
+profileModal: document.getElementById("profileModal"),
+settingsModal: document.getElementById("settingsModal"),
+saveModal: document.getElementById("saveModal"),
+closeProfileModal: document.getElementById("closeProfileModal"),
+closeSettingsModal: document.getElementById("closeSettingsModal"),
+closeSaveModal: document.getElementById("closeSaveModal"),
 };
 
 document.addEventListener("DOMContentLoaded", init);
@@ -140,6 +149,18 @@ async function loadData() {
   }
 
   saveState();
+}
+
+function openModal(el) {
+  if (!el) return;
+  el.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(el) {
+  if (!el) return;
+  el.classList.add("hidden");
+  document.body.style.overflow = "";
 }
 
 function initCollapsibles() {
@@ -291,6 +312,41 @@ function bindEvents() {
       closeVoiceHelpModal();
     }
   });
+  
+  // ===== MODALS =====
+
+els.avatarBtn?.addEventListener("click", () => {
+  openModal(els.profileModal);
+});
+
+els.settingsBtn?.addEventListener("click", () => {
+  openModal(els.settingsModal);
+});
+
+els.saveBtn?.addEventListener("click", () => {
+  openModal(els.saveModal);
+});
+
+els.closeProfileModal?.addEventListener("click", () => {
+  closeModal(els.profileModal);
+});
+
+els.closeSettingsModal?.addEventListener("click", () => {
+  closeModal(els.settingsModal);
+});
+
+els.closeSaveModal?.addEventListener("click", () => {
+  closeModal(els.saveModal);
+});
+
+// fermeture ESC
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeModal(els.profileModal);
+    closeModal(els.settingsModal);
+    closeModal(els.saveModal);
+  }
+});
 }
 
 function refreshAll() {
@@ -302,6 +358,15 @@ function refreshAll() {
   renderLessonList();
   renderDailyStats();
   saveState();
+  const pathwaySection = document.getElementById("pathwaySection");
+
+if (pathwaySection) {
+  if (state.learningMode === "pathway") {
+    pathwaySection.classList.remove("hidden");
+  } else {
+    pathwaySection.classList.add("hidden");
+  }
+}
 }
 
 function renderPathways() {
