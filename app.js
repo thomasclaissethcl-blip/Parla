@@ -604,6 +604,11 @@ function completeCurrentLesson() {
 
   saveState();
   refreshAll();
+
+  currentLesson = null;
+  els.lessonPlayer.classList.add("hidden");
+  els.lessonCatalogSection.classList.remove("hidden");
+  els.lessonCatalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function getNextLessonIdInPathway() {
