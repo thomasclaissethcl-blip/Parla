@@ -1,16 +1,23 @@
 
 :root {
-  --bg: #0f172a;
-  --panel: #111827;
-  --panel-2: #1f2937;
-  --border: #374151;
-  --text: #f9fafb;
-  --muted: #cbd5e1;
-  --accent: #22c55e;
-  --accent-2: #38bdf8;
-  --warning: #f59e0b;
-  --danger: #ef4444;
-  --shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  --bg: #0d1117;
+  --panel: #151b23;
+  --panel-2: #1c2430;
+  --border: #2b3545;
+  --text: #f7f3e8;
+  --muted: #c9c3b5;
+
+  --accent: #009246;
+  --accent-2: #36b36b;
+  --accent-soft: rgba(0, 146, 70, 0.18);
+
+  --danger: #ce2b37;
+  --danger-soft: rgba(206, 43, 55, 0.16);
+
+  --warning: #d9a441;
+  --info: #8fb8ff;
+
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
   --radius: 18px;
 }
 
@@ -21,8 +28,10 @@
 body {
   margin: 0;
   font-family: Inter, Arial, sans-serif;
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 28%),
-    linear-gradient(180deg, #0b1220 0%, #101827 100%);
+  background:
+    radial-gradient(circle at top left, rgba(0, 146, 70, 0.12), transparent 25%),
+    radial-gradient(circle at top right, rgba(206, 43, 55, 0.10), transparent 22%),
+    linear-gradient(180deg, #0d1117 0%, #111823 100%);
   color: var(--text);
 }
 
@@ -122,10 +131,14 @@ input[type="search"],
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(17, 24, 39, 0.92);
+  background: linear-gradient(180deg, #18202b 0%, #121923 100%);
   color: var(--text);
-  border: 1px solid rgba(55, 65, 81, 0.85);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
+}
+
+.icon-btn:hover {
+  background: linear-gradient(180deg, #1d2734 0%, #151d28 100%);
 }
 
 .icon-btn svg {
@@ -298,7 +311,8 @@ input[type="search"],
 }
 
 .stage-panel {
-  background: linear-gradient(180deg, rgba(17, 24, 39, 0.95), rgba(12, 20, 35, 0.95));
+  background: linear-gradient(180deg, rgba(21, 27, 35, 0.96), rgba(14, 20, 28, 0.96));
+  border: 1px solid rgba(0, 146, 70, 0.28);
 }
 
 .stage-card {
@@ -349,17 +363,17 @@ input[type="search"],
   display: inline-flex;
   padding: 0.55rem 0.8rem;
   border-radius: 999px;
-  background: rgba(34, 197, 94, 0.15);
-  color: #bbf7d0;
-  border: 1px solid rgba(34, 197, 94, 0.3);
+  background: var(--accent-soft);
+  color: #8ce0ae;
+  border: 1px solid rgba(0, 146, 70, 0.35);
   font-size: 0.9rem;
   white-space: nowrap;
 }
 
 .pill.muted {
-  background: rgba(56, 189, 248, 0.12);
-  color: #bae6fd;
-  border-color: rgba(56, 189, 248, 0.3);
+  background: var(--danger-soft);
+  color: #f2a8ae;
+  border-color: rgba(206, 43, 55, 0.34);
 }
 
 .lesson-grid {
