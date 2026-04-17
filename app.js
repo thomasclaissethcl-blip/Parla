@@ -516,6 +516,17 @@ function openLesson(lessonId) {
   els.lessonPlayer.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+function shuffleArray(array) {
+  const copy = [...array];
+
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+
+  return copy;
+}
+
 function buildLessonContentHTML(lesson) {
   const vocabHtml = `
     <div>
@@ -532,21 +543,25 @@ function buildLessonContentHTML(lesson) {
   `;
 
   const quizHtml = lesson.quiz?.length
-    ? lesson.quiz.map((q, index) => `
-      <div class="quiz-card">
-        <strong>Question ${index + 1}</strong>
-        <p>${escapeHtml(q.q)}</p>
-        <div class="quiz-options">
-          ${q.options.map((option) => `
-            <button class="option-btn" data-question-index="${index}" data-answer="${escapeHtml(option)}">
-              ${escapeHtml(option)}
-            </button>
-          `).join("")}
+  ? lesson.quiz.map((q, index) => {
+      const shuffledOptions = shuffleArray(q.options);
+
+      return `
+        <div class="quiz-card">
+          <strong>Question ${index + 1}</strong>
+          <p>${escapeHtml(q.q)}</p>
+          <div class="quiz-options">
+            ${shuffledOptions.map((option) => `
+              <button class="option-btn" data-question-index="${index}" data-answer="${escapeHtml(option)}">
+                ${escapeHtml(option)}
+              </button>
+            `).join("")}
+          </div>
+          <div id="quiz-feedback-${index}" class="feedback"></div>
         </div>
-        <div id="quiz-feedback-${index}" class="feedback"></div>
-      </div>
-    `).join("")
-    : `<p class="small-text">Aucun quiz disponible pour cette leçon.</p>`;
+      `;
+    }).join("")
+  : `<p class="small-text">Aucun quiz disponible pour cette leçon.</p>`;
 
   return `${vocabHtml}<div><h3>Mini-quiz</h3>${quizHtml}</div>`;
 }
@@ -694,18 +709,19 @@ function startQuickQuiz() {
   }
 
   const q = currentQuizPool[Math.floor(Math.random() * currentQuizPool.length)];
+const shuffledOptions = shuffleArray(q.options);
 
-  els.quizArea.innerHTML = `
-    <div class="quiz-card">
-      <p>${escapeHtml(q.q)}</p>
-      <div class="quiz-options">
-        ${q.options.map((option) => `
-          <button class="option-btn" data-quiz-option="${escapeHtml(option)}">${escapeHtml(option)}</button>
-        `).join("")}
-      </div>
-      <div id="quickQuizFeedback" class="feedback"></div>
+els.quizArea.innerHTML = `
+  <div class="quiz-card">
+    <p>${escapeHtml(q.q)}</p>
+    <div class="quiz-options">
+      ${shuffledOptions.map((option) => `
+        <button class="option-btn" data-quiz-option="${escapeHtml(option)}">${escapeHtml(option)}</button>
+      `).join("")}
     </div>
-  `;
+    <div id="quickQuizFeedback" class="feedback"></div>
+  </div>
+`;
 
   els.quizArea.querySelectorAll("[data-quiz-option]").forEach((btn) => {
     btn.addEventListener("click", () => {
