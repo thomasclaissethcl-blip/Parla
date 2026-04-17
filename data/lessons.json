@@ -578,6 +578,1274 @@
         { "id": "culture", "stage": "superlocuteur", "order": 11 },
         { "id": "politique", "stage": "superlocuteur", "order": 9 },
         { "id": "rencontres", "stage": "superlocuteur", "order": 15 }
+      ],
+    {
+      "id": "nombres-1",
+      "title": "Compter et donner un nombre",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Utiliser les nombres les plus courants dans des échanges simples.",
+      "content": [
+        { "it": "uno", "fr": "un" },
+        { "it": "due", "fr": "deux" },
+        { "it": "tre", "fr": "trois" },
+        { "it": "dieci", "fr": "dix" },
+        { "it": "venti", "fr": "vingt" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « deux » en italien ?",
+          "options": ["due", "tre", "dieci"],
+          "answer": "due"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "decouverte", "order": 4 },
+        { "id": "rencontres", "stage": "decouverte", "order": 4 }
+      ]
+    },
+    {
+      "id": "nationalites-1",
+      "title": "Dire d’où l’on vient",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Présenter sa nationalité et son pays d’origine.",
+      "content": [
+        { "it": "sono francese", "fr": "je suis français" },
+        { "it": "sono italiana", "fr": "je suis italienne" },
+        { "it": "vengo dalla Francia", "fr": "je viens de France" },
+        { "it": "di dove sei", "fr": "d’où es-tu" },
+        { "it": "abito in", "fr": "j’habite à" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « vengo dalla Francia » ?",
+          "options": ["je viens de France", "je vais en France", "j’aime la France"],
+          "answer": "je viens de France"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "decouverte", "order": 5 },
+        { "id": "tourisme", "stage": "apprentissage", "order": 9 }
+      ]
+    },
+    {
+      "id": "age-1",
+      "title": "Dire son âge",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Demander et indiquer son âge dans une interaction simple.",
+      "content": [
+        { "it": "quanti anni hai", "fr": "quel âge as-tu" },
+        { "it": "ho vent’anni", "fr": "j’ai vingt ans" },
+        { "it": "ho trent’anni", "fr": "j’ai trente ans" },
+        { "it": "anni", "fr": "ans" },
+        { "it": "più o meno", "fr": "à peu près" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « quel âge as-tu » ?",
+          "options": ["quanti anni hai", "come ti chiami", "dove abiti"],
+          "answer": "quanti anni hai"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "apprentissage", "order": 7 }
+      ]
+    },
+    {
+      "id": "jours-1",
+      "title": "Parler des jours de la semaine",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Situer une activité dans la semaine.",
+      "content": [
+        { "it": "lunedì", "fr": "lundi" },
+        { "it": "martedì", "fr": "mardi" },
+        { "it": "venerdì", "fr": "vendredi" },
+        { "it": "sabato", "fr": "samedi" },
+        { "it": "domenica", "fr": "dimanche" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « samedi » ?",
+          "options": ["sabato", "domenica", "venerdì"],
+          "answer": "sabato"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "apprentissage", "order": 8 },
+        { "id": "tourisme", "stage": "apprentissage", "order": 10 }
+      ]
+    },
+    {
+      "id": "heures-1",
+      "title": "Demander et donner l’heure",
+      "type": "scenario",
+      "difficulty": 1,
+      "description": "Comprendre et formuler une heure simple.",
+      "content": [
+        { "it": "che ora è", "fr": "quelle heure est-il" },
+        { "it": "è l’una", "fr": "il est une heure" },
+        { "it": "sono le due", "fr": "il est deux heures" },
+        { "it": "mezzogiorno", "fr": "midi" },
+        { "it": "mezzanotte", "fr": "minuit" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « che ora è » ?",
+          "options": ["quelle heure est-il", "quel jour sommes-nous", "où allons-nous"],
+          "answer": "quelle heure est-il"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "decouverte", "order": 5 },
+        { "id": "rencontres", "stage": "apprentissage", "order": 9 }
+      ]
+    },
+    {
+      "id": "achats-1",
+      "title": "Faire un achat simple",
+      "type": "scenario",
+      "difficulty": 1,
+      "description": "Acheter un objet courant et comprendre une question simple du vendeur.",
+      "content": [
+        { "it": "quanto viene", "fr": "combien cela coûte" },
+        { "it": "lo prendo", "fr": "je le prends" },
+        { "it": "carta o contanti", "fr": "carte ou espèces" },
+        { "it": "uno scontrino", "fr": "un ticket de caisse" },
+        { "it": "troppo caro", "fr": "trop cher" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « carta o contanti » ?",
+          "options": ["carte ou espèces", "grand ou petit", "chaud ou froid"],
+          "answer": "carte ou espèces"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "apprentissage", "order": 11 }
+      ]
+    },
+    {
+      "id": "petit-dejeuner-1",
+      "title": "Prendre un petit-déjeuner",
+      "type": "scenario",
+      "difficulty": 1,
+      "description": "Commander les produits les plus courants du matin.",
+      "content": [
+        { "it": "un cappuccino", "fr": "un cappuccino" },
+        { "it": "un cornetto", "fr": "un croissant" },
+        { "it": "senza zucchero", "fr": "sans sucre" },
+        { "it": "caldo", "fr": "chaud" },
+        { "it": "freddo", "fr": "froid" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « sans sucre » ?",
+          "options": ["senza zucchero", "con zucchero", "troppo zucchero"],
+          "answer": "senza zucchero"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "apprentissage", "order": 12 }
+      ]
+    },
+    {
+      "id": "meteo-1",
+      "title": "Parler du temps qu’il fait",
+      "type": "vocabulary",
+      "difficulty": 1,
+      "description": "Décrire la météo avec des expressions simples.",
+      "content": [
+        { "it": "fa caldo", "fr": "il fait chaud" },
+        { "it": "fa freddo", "fr": "il fait froid" },
+        { "it": "piove", "fr": "il pleut" },
+        { "it": "c’è il sole", "fr": "il y a du soleil" },
+        { "it": "c’è vento", "fr": "il y a du vent" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « piove » ?",
+          "options": ["il pleut", "il neige", "il fait beau"],
+          "answer": "il pleut"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "apprentissage", "order": 13 },
+        { "id": "rencontres", "stage": "apprentissage", "order": 10 }
+      ]
+    },
+    {
+      "id": "maison-1",
+      "title": "Décrire son logement",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Présenter son logement et quelques pièces principales.",
+      "content": [
+        { "it": "un appartamento", "fr": "un appartement" },
+        { "it": "una casa", "fr": "une maison" },
+        { "it": "la cucina", "fr": "la cuisine" },
+        { "it": "la camera", "fr": "la chambre" },
+        { "it": "il soggiorno", "fr": "le salon" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « la cuisine » ?",
+          "options": ["la cucina", "la camera", "la strada"],
+          "answer": "la cucina"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "approfondissement", "order": 9 }
+      ]
+    },
+    {
+      "id": "routine-1",
+      "title": "Décrire sa journée",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Parler d’une routine simple du matin au soir.",
+      "content": [
+        { "it": "mi sveglio", "fr": "je me réveille" },
+        { "it": "faccio colazione", "fr": "je prends le petit-déjeuner" },
+        { "it": "lavoro", "fr": "je travaille" },
+        { "it": "torno a casa", "fr": "je rentre à la maison" },
+        { "it": "vado a dormire", "fr": "je vais dormir" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « torno a casa » ?",
+          "options": ["je rentre à la maison", "je vais au travail", "je pars en voyage"],
+          "answer": "je rentre à la maison"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "approfondissement", "order": 10 }
+      ]
+    },
+    {
+      "id": "loisirs-1",
+      "title": "Parler de ses loisirs",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Présenter des activités appréciées pendant le temps libre.",
+      "content": [
+        { "it": "nel tempo libero", "fr": "pendant le temps libre" },
+        { "it": "faccio sport", "fr": "je fais du sport" },
+        { "it": "guardo serie", "fr": "je regarde des séries" },
+        { "it": "cucino", "fr": "je cuisine" },
+        { "it": "esco con gli amici", "fr": "je sors avec des amis" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « je fais du sport » ?",
+          "options": ["faccio sport", "vedo sport", "parlo sport"],
+          "answer": "faccio sport"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "approfondissement", "order": 11 },
+        { "id": "culture", "stage": "apprentissage", "order": 6 }
+      ]
+    },
+    {
+      "id": "telephone-1",
+      "title": "Échanger un numéro de téléphone",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Demander, comprendre et répéter un numéro.",
+      "content": [
+        { "it": "qual è il tuo numero", "fr": "quel est ton numéro" },
+        { "it": "te lo ripeto", "fr": "je te le répète" },
+        { "it": "scrivimi", "fr": "écris-moi" },
+        { "it": "mandami un messaggio", "fr": "envoie-moi un message" },
+        { "it": "ho sbagliato numero", "fr": "je me suis trompé de numéro" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « mandami un messaggio » ?",
+          "options": ["envoie-moi un message", "appelle-moi demain", "oublie mon numéro"],
+          "answer": "envoie-moi un message"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "approfondissement", "order": 12 }
+      ]
+    },
+    {
+      "id": "reseaux-1",
+      "title": "Parler des réseaux sociaux",
+      "type": "conversation",
+      "difficulty": 2,
+      "description": "Évoquer sa présence en ligne et quelques usages courants.",
+      "content": [
+        { "it": "seguimi", "fr": "suis-moi" },
+        { "it": "un profilo", "fr": "un profil" },
+        { "it": "pubblico foto", "fr": "je publie des photos" },
+        { "it": "un commento", "fr": "un commentaire" },
+        { "it": "un messaggio privato", "fr": "un message privé" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « un message privé » ?",
+          "options": ["un messaggio privato", "un profilo pubblico", "un numero segreto"],
+          "answer": "un messaggio privato"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "maitrise", "order": 10 }
+      ]
+    },
+    {
+      "id": "courses-1",
+      "title": "Faire ses courses",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Acheter des produits du quotidien dans un magasin ou un marché.",
+      "content": [
+        { "it": "un chilo", "fr": "un kilo" },
+        { "it": "mezzo chilo", "fr": "un demi-kilo" },
+        { "it": "quanto ne vuole", "fr": "combien en voulez-vous" },
+        { "it": "frutta e verdura", "fr": "fruits et légumes" },
+        { "it": "basta così", "fr": "c’est bon comme ça" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « basta così » ?",
+          "options": ["c’est bon comme ça", "ce n’est pas assez", "je vais revenir"],
+          "answer": "c’est bon comme ça"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "approfondissement", "order": 11 }
+      ]
+    },
+    {
+      "id": "urgence-1",
+      "title": "Faire face à un imprévu",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Demander de l’aide dans une situation simple mais urgente.",
+      "content": [
+        { "it": "ho un problema", "fr": "j’ai un problème" },
+        { "it": "mi può aiutare", "fr": "pouvez-vous m’aider" },
+        { "it": "ho perso", "fr": "j’ai perdu" },
+        { "it": "non funziona", "fr": "cela ne marche pas" },
+        { "it": "è urgente", "fr": "c’est urgent" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « j’ai un problème » ?",
+          "options": ["ho un problema", "ho una soluzione", "ho una domanda"],
+          "answer": "ho un problema"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "approfondissement", "order": 12 }
+      ]
+    },
+    {
+      "id": "pharmacie-1",
+      "title": "À la pharmacie",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Expliquer un besoin simple de santé du quotidien.",
+      "content": [
+        { "it": "la farmacia", "fr": "la pharmacie" },
+        { "it": "ho mal di testa", "fr": "j’ai mal à la tête" },
+        { "it": "una medicina", "fr": "un médicament" },
+        { "it": "senza ricetta", "fr": "sans ordonnance" },
+        { "it": "quante volte al giorno", "fr": "combien de fois par jour" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « senza ricetta » ?",
+          "options": ["sans ordonnance", "avec retard", "sans paiement"],
+          "answer": "sans ordonnance"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "approfondissement", "order": 13 }
+      ]
+    },
+    {
+      "id": "gare-1",
+      "title": "Gérer un trajet en gare",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Comprendre les annonces et résoudre un problème simple de transport.",
+      "content": [
+        { "it": "il binario", "fr": "la voie" },
+        { "it": "in ritardo", "fr": "en retard" },
+        { "it": "cancellato", "fr": "annulé" },
+        { "it": "cambio a Firenze", "fr": "correspondance à Florence" },
+        { "it": "devo cambiare treno", "fr": "je dois changer de train" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « en retard » ?",
+          "options": ["in ritardo", "in anticipo", "in ufficio"],
+          "answer": "in ritardo"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "approfondissement", "order": 14 }
+      ]
+    },
+    {
+      "id": "ville-2",
+      "title": "S’orienter dans un quartier",
+      "type": "scenario",
+      "difficulty": 2,
+      "description": "Repérer des lieux utiles et demander une direction plus précise.",
+      "content": [
+        { "it": "l’angolo", "fr": "le coin de rue" },
+        { "it": "l’incrocio", "fr": "le carrefour" },
+        { "it": "di fronte a", "fr": "en face de" },
+        { "it": "accanto a", "fr": "à côté de" },
+        { "it": "dietro", "fr": "derrière" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « di fronte a » ?",
+          "options": ["en face de", "loin de", "au-dessus de"],
+          "answer": "en face de"
+        }
+      ],
+      "pathways": [
+        { "id": "tourisme", "stage": "approfondissement", "order": 15 }
+      ]
+    },
+    {
+      "id": "amities-1",
+      "title": "Décrire une relation amicale",
+      "type": "conversation",
+      "difficulty": 3,
+      "description": "Parler d’un ami, d’une rencontre et d’une relation qui évolue.",
+      "content": [
+        { "it": "un amico stretto", "fr": "un ami proche" },
+        { "it": "ci conosciamo da anni", "fr": "nous nous connaissons depuis des années" },
+        { "it": "andiamo d’accordo", "fr": "nous nous entendons bien" },
+        { "it": "abbiamo molto in comune", "fr": "nous avons beaucoup en commun" },
+        { "it": "mi fido di lei", "fr": "j’ai confiance en elle" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « abbiamo molto in comune » ?",
+          "options": ["nous avons beaucoup en commun", "nous habitons ensemble", "nous travaillons ensemble"],
+          "answer": "nous avons beaucoup en commun"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "maitrise", "order": 11 }
+      ]
+    },
+    {
+      "id": "sentiments-1",
+      "title": "Exprimer ses émotions",
+      "type": "conversation",
+      "difficulty": 3,
+      "description": "Dire ce que l’on ressent dans différentes situations.",
+      "content": [
+        { "it": "sono felice", "fr": "je suis heureux" },
+        { "it": "sono preoccupato", "fr": "je suis inquiet" },
+        { "it": "sono stanco", "fr": "je suis fatigué" },
+        { "it": "mi sento meglio", "fr": "je me sens mieux" },
+        { "it": "sono emozionata", "fr": "je suis émue" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « je suis inquiet » ?",
+          "options": ["sono preoccupato", "sono felice", "sono pronto"],
+          "answer": "sono preoccupato"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "maitrise", "order": 12 }
+      ]
+    },
+    {
+      "id": "projets-1",
+      "title": "Parler de ses projets",
+      "type": "conversation",
+      "difficulty": 3,
+      "description": "Évoquer des projets personnels et des intentions simples.",
+      "content": [
+        { "it": "vorrei cambiare lavoro", "fr": "je voudrais changer de travail" },
+        { "it": "sto pensando di", "fr": "je suis en train de penser à" },
+        { "it": "l’anno prossimo", "fr": "l’année prochaine" },
+        { "it": "ho in mente", "fr": "j’ai en tête" },
+        { "it": "non sono ancora sicuro", "fr": "je ne suis pas encore sûr" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « l’anno prossimo » ?",
+          "options": ["l’année prochaine", "l’année dernière", "le mois prochain"],
+          "answer": "l’année prochaine"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "maitrise", "order": 13 }
+      ]
+    },
+    {
+      "id": "accords-1",
+      "title": "Réagir avec naturel",
+      "type": "conversation",
+      "difficulty": 3,
+      "description": "Utiliser des réactions courantes pour rendre un échange plus fluide.",
+      "content": [
+        { "it": "hai ragione", "fr": "tu as raison" },
+        { "it": "non ne sono sicuro", "fr": "je n’en suis pas sûr" },
+        { "it": "che peccato", "fr": "quel dommage" },
+        { "it": "che bello", "fr": "comme c’est bien" },
+        { "it": "capisco cosa intendi", "fr": "je comprends ce que tu veux dire" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « hai ragione » ?",
+          "options": ["tu as raison", "tu exagères", "tu plaisantes"],
+          "answer": "tu as raison"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "maitrise", "order": 14 },
+        { "id": "culture", "stage": "maitrise", "order": 9 }
+      ]
+    },
+    {
+      "id": "rendezvous-1",
+      "title": "Fixer un rendez-vous",
+      "type": "conversation",
+      "difficulty": 3,
+      "description": "S’accorder sur un moment, un lieu et une disponibilité.",
+      "content": [
+        { "it": "sei libero domani", "fr": "es-tu libre demain" },
+        { "it": "ci vediamo verso le otto", "fr": "on se voit vers huit heures" },
+        { "it": "va bene per me", "fr": "cela me convient" },
+        { "it": "devo controllare", "fr": "je dois vérifier" },
+        { "it": "ti confermo dopo", "fr": "je te confirme plus tard" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « cela me convient » ?",
+          "options": ["va bene per me", "non mi piace", "non posso venire"],
+          "answer": "va bene per me"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "maitrise", "order": 15 }
+      ]
+    },
+    {
+      "id": "cinema-2",
+      "title": "Donner un avis sur un film",
+      "type": "culture",
+      "difficulty": 3,
+      "description": "Décrire un film, son rythme et son effet sur le spectateur.",
+      "content": [
+        { "it": "la trama", "fr": "l’intrigue" },
+        { "it": "coinvolgente", "fr": "captivant" },
+        { "it": "lento", "fr": "lent" },
+        { "it": "mi ha colpito", "fr": "cela m’a marqué" },
+        { "it": "il finale", "fr": "la fin" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « mi ha colpito » ?",
+          "options": ["cela m’a marqué", "cela m’a ennuyé", "cela m’a surpris négativement"],
+          "answer": "cela m’a marqué"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "approfondissement", "order": 8 }
+      ]
+    },
+    {
+      "id": "musique-2",
+      "title": "Décrire un style musical",
+      "type": "culture",
+      "difficulty": 3,
+      "description": "Comparer des styles, des rythmes et des préférences musicales.",
+      "content": [
+        { "it": "il ritmo", "fr": "le rythme" },
+        { "it": "la melodia", "fr": "la mélodie" },
+        { "it": "testi profondi", "fr": "des paroles profondes" },
+        { "it": "suona dal vivo", "fr": "il joue en direct" },
+        { "it": "ha una bella voce", "fr": "il a une belle voix" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « la mélodie » ?",
+          "options": ["la melodia", "la memoria", "la scena"],
+          "answer": "la melodia"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "approfondissement", "order": 9 }
+      ]
+    },
+    {
+      "id": "series-1",
+      "title": "Parler de séries et d’épisodes",
+      "type": "culture",
+      "difficulty": 3,
+      "description": "Échanger sur une série, sa durée et son intérêt.",
+      "content": [
+        { "it": "una serie", "fr": "une série" },
+        { "it": "un episodio", "fr": "un épisode" },
+        { "it": "la stagione", "fr": "la saison" },
+        { "it": "non riesco a smettere", "fr": "je n’arrive pas à m’arrêter" },
+        { "it": "vale la pena guardarla", "fr": "cela vaut la peine de la regarder" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « un episodio » ?",
+          "options": ["un épisode", "une scène", "une bande-annonce"],
+          "answer": "un épisode"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "approfondissement", "order": 10 },
+        { "id": "rencontres", "stage": "maitrise", "order": 16 }
+      ]
+    },
+    {
+      "id": "histoire-1",
+      "title": "Évoquer un événement historique",
+      "type": "culture",
+      "difficulty": 3,
+      "description": "Situer un événement dans le temps et en parler simplement.",
+      "content": [
+        { "it": "nel passato", "fr": "dans le passé" },
+        { "it": "un evento storico", "fr": "un événement historique" },
+        { "it": "è successo nel", "fr": "cela s’est passé en" },
+        { "it": "ha cambiato il paese", "fr": "cela a changé le pays" },
+        { "it": "ancora oggi", "fr": "encore aujourd’hui" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « ancora oggi » ?",
+          "options": ["encore aujourd’hui", "jusqu’à demain", "il y a longtemps"],
+          "answer": "encore aujourd’hui"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "maitrise", "order": 11 },
+        { "id": "politique", "stage": "approfondissement", "order": 9 }
+      ]
+    },
+    {
+      "id": "patrimoine-2",
+      "title": "Décrire un lieu patrimonial",
+      "type": "culture",
+      "difficulty": 3,
+      "description": "Présenter un lieu remarquable et en souligner l’intérêt.",
+      "content": [
+        { "it": "un monumento", "fr": "un monument" },
+        { "it": "ben conservato", "fr": "bien conservé" },
+        { "it": "risale al medioevo", "fr": "cela remonte au Moyen Âge" },
+        { "it": "attira molti visitatori", "fr": "cela attire de nombreux visiteurs" },
+        { "it": "ha un grande valore storico", "fr": "cela a une grande valeur historique" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « attira molti visitatori » ?",
+          "options": ["cela attire de nombreux visiteurs", "cela ferme très tôt", "cela coûte très cher"],
+          "answer": "cela attire de nombreux visiteurs"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "maitrise", "order": 12 },
+        { "id": "tourisme", "stage": "maitrise", "order": 13 }
+      ]
+    },
+    {
+      "id": "presse-1",
+      "title": "Lire un titre de presse",
+      "type": "politique",
+      "difficulty": 3,
+      "description": "Comprendre les mots les plus courants dans un article d’actualité.",
+      "content": [
+        { "it": "un titolo", "fr": "un titre" },
+        { "it": "le elezioni", "fr": "les élections" },
+        { "it": "un sondaggio", "fr": "un sondage" },
+        { "it": "la notizia", "fr": "la nouvelle" },
+        { "it": "secondo il giornale", "fr": "selon le journal" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « les élections » ?",
+          "options": ["le elezioni", "le decisioni", "le regioni"],
+          "answer": "le elezioni"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "approfondissement", "order": 7 }
+      ]
+    },
+    {
+      "id": "citoyennete-1",
+      "title": "Parler de citoyenneté",
+      "type": "politique",
+      "difficulty": 3,
+      "description": "Évoquer la participation civique et les responsabilités collectives.",
+      "content": [
+        { "it": "i cittadini", "fr": "les citoyens" },
+        { "it": "partecipare", "fr": "participer" },
+        { "it": "la vita pubblica", "fr": "la vie publique" },
+        { "it": "il bene comune", "fr": "le bien commun" },
+        { "it": "avere voce", "fr": "avoir voix au chapitre" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « il bene comune » ?",
+          "options": ["le bien commun", "le bien privé", "le service public"],
+          "answer": "le bien commun"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "approfondissement", "order": 10 }
+      ]
+    },
+    {
+      "id": "territoires-1",
+      "title": "Parler des régions et territoires",
+      "type": "politique",
+      "difficulty": 3,
+      "description": "Comparer des territoires et évoquer leurs réalités différentes.",
+      "content": [
+        { "it": "il nord", "fr": "le nord" },
+        { "it": "il sud", "fr": "le sud" },
+        { "it": "una regione", "fr": "une région" },
+        { "it": "le differenze territoriali", "fr": "les différences territoriales" },
+        { "it": "i servizi pubblici", "fr": "les services publics" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « une région » ?",
+          "options": ["una regione", "una nazione", "una funzione"],
+          "answer": "una regione"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "approfondissement", "order": 11 }
+      ]
+    },
+    {
+      "id": "travail-2",
+      "title": "Parler d’emploi et de conditions de travail",
+      "type": "politique",
+      "difficulty": 4,
+      "description": "Décrire des réalités du travail et exprimer une première analyse.",
+      "content": [
+        { "it": "il contratto", "fr": "le contrat" },
+        { "it": "lo stipendio", "fr": "le salaire" },
+        { "it": "la precarietà", "fr": "la précarité" },
+        { "it": "le condizioni di lavoro", "fr": "les conditions de travail" },
+        { "it": "trovare un equilibrio", "fr": "trouver un équilibre" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « la precarietà » ?",
+          "options": ["la précarité", "la stabilité", "la retraite"],
+          "answer": "la précarité"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "maitrise", "order": 8 }
+      ]
+    },
+    {
+      "id": "ecologie-1",
+      "title": "Parler d’écologie et d’environnement",
+      "type": "politique",
+      "difficulty": 4,
+      "description": "Nommer des enjeux écologiques et exprimer une position simple.",
+      "content": [
+        { "it": "l’ambiente", "fr": "l’environnement" },
+        { "it": "l’inquinamento", "fr": "la pollution" },
+        { "it": "le energie rinnovabili", "fr": "les énergies renouvelables" },
+        { "it": "ridurre i rifiuti", "fr": "réduire les déchets" },
+        { "it": "una priorità politica", "fr": "une priorité politique" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « la pollution » ?",
+          "options": ["l’inquinamento", "l’istruzione", "la produzione"],
+          "answer": "l’inquinamento"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "maitrise", "order": 9 },
+        { "id": "culture", "stage": "superlocuteur", "order": 13 }
+      ]
+    },
+    {
+      "id": "education-1",
+      "title": "Discuter de l’éducation",
+      "type": "politique",
+      "difficulty": 4,
+      "description": "Évoquer l’école, l’université et les enjeux de formation.",
+      "content": [
+        { "it": "l’istruzione", "fr": "l’éducation" },
+        { "it": "l’università", "fr": "l’université" },
+        { "it": "la formazione", "fr": "la formation" },
+        { "it": "pari opportunità", "fr": "égalité des chances" },
+        { "it": "investire nel futuro", "fr": "investir dans l’avenir" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « pari opportunità » ?",
+          "options": ["égalité des chances", "liberté d’expression", "service minimum"],
+          "answer": "égalité des chances"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "maitrise", "order": 10 }
+      ]
+    },
+    {
+      "id": "medias-1",
+      "title": "Parler des médias et de l’information",
+      "type": "politique",
+      "difficulty": 4,
+      "description": "Comparer des sources d’information et évoquer la fiabilité.",
+      "content": [
+        { "it": "i media", "fr": "les médias" },
+        { "it": "una fonte affidabile", "fr": "une source fiable" },
+        { "it": "verificare le informazioni", "fr": "vérifier les informations" },
+        { "it": "la disinformazione", "fr": "la désinformation" },
+        { "it": "circola online", "fr": "cela circule en ligne" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « une source fiable » ?",
+          "options": ["una fonte affidabile", "una notizia veloce", "una voce pubblica"],
+          "answer": "una fonte affidabile"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "superlocuteur", "order": 10 },
+        { "id": "culture", "stage": "superlocuteur", "order": 14 }
+      ]
+    },
+    {
+      "id": "debattre-2",
+      "title": "Conceder et contre-argumenter",
+      "type": "politique",
+      "difficulty": 4,
+      "description": "Structurer une prise de position plus nuancée dans un débat.",
+      "content": [
+        { "it": "capisco il tuo punto di vista", "fr": "je comprends ton point de vue" },
+        { "it": "tuttavia", "fr": "toutefois" },
+        { "it": "resta il fatto che", "fr": "il reste que" },
+        { "it": "non basta dire che", "fr": "il ne suffit pas de dire que" },
+        { "it": "bisogna distinguere", "fr": "il faut distinguer" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « tuttavia » ?",
+          "options": ["toutefois", "par ailleurs", "d’abord"],
+          "answer": "toutefois"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "superlocuteur", "order": 11 },
+        { "id": "culture", "stage": "superlocuteur", "order": 15 }
+      ]
+    },
+    {
+      "id": "opinion-2",
+      "title": "Structurer une opinion développée",
+      "type": "conversation",
+      "difficulty": 4,
+      "description": "Organiser un propos plus long avec progression logique.",
+      "content": [
+        { "it": "prima di tutto", "fr": "tout d’abord" },
+        { "it": "inoltre", "fr": "de plus" },
+        { "it": "allo stesso tempo", "fr": "en même temps" },
+        { "it": "in conclusione", "fr": "en conclusion" },
+        { "it": "il punto principale è", "fr": "le point principal est" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « en conclusion » ?",
+          "options": ["in conclusione", "in costruzione", "in questione"],
+          "answer": "in conclusione"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 16 },
+        { "id": "culture", "stage": "superlocuteur", "order": 16 },
+        { "id": "politique", "stage": "superlocuteur", "order": 12 }
+      ]
+    },
+    {
+      "id": "reformulation-1",
+      "title": "Reformuler pour être compris",
+      "type": "conversation",
+      "difficulty": 4,
+      "description": "Dire autrement, préciser et vérifier la compréhension.",
+      "content": [
+        { "it": "voglio dire che", "fr": "je veux dire que" },
+        { "it": "in altre parole", "fr": "en d’autres termes" },
+        { "it": "mi spiego meglio", "fr": "je m’explique mieux" },
+        { "it": "se ho capito bene", "fr": "si j’ai bien compris" },
+        { "it": "non era esattamente questo", "fr": "ce n’était pas exactement cela" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « in altre parole » ?",
+          "options": ["en d’autres termes", "avec d’autres personnes", "dans un autre lieu"],
+          "answer": "en d’autres termes"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 17 },
+        { "id": "politique", "stage": "superlocuteur", "order": 13 }
+      ]
+    },
+    {
+      "id": "humour-1",
+      "title": "Comprendre une touche d’humour",
+      "type": "conversation",
+      "difficulty": 4,
+      "description": "Repérer l’ironie légère et réagir avec naturel.",
+      "content": [
+        { "it": "sto scherzando", "fr": "je plaisante" },
+        { "it": "che battuta", "fr": "quelle blague" },
+        { "it": "detto con ironia", "fr": "dit avec ironie" },
+        { "it": "non prenderla sul serio", "fr": "ne le prends pas au sérieux" },
+        { "it": "mi fa ridere", "fr": "cela me fait rire" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « je plaisante » ?",
+          "options": ["sto scherzando", "sto lavorando", "sto aspettando"],
+          "answer": "sto scherzando"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 18 },
+        { "id": "culture", "stage": "superlocuteur", "order": 17 }
+      ]
+    },
+    {
+      "id": "litterature-2",
+      "title": "Commenter un style d’écriture",
+      "type": "culture",
+      "difficulty": 4,
+      "description": "Décrire une écriture, son ton et son effet sur le lecteur.",
+      "content": [
+        { "it": "lo stile", "fr": "le style" },
+        { "it": "scorrevole", "fr": "fluide" },
+        { "it": "complesso", "fr": "complexe" },
+        { "it": "ricco di immagini", "fr": "riche en images" },
+        { "it": "mi ha fatto riflettere", "fr": "cela m’a fait réfléchir" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « scorrevole » ?",
+          "options": ["fluide", "ancien", "bruyant"],
+          "answer": "fluide"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "superlocuteur", "order": 18 }
+      ]
+    },
+    {
+      "id": "art-1",
+      "title": "Décrire une œuvre d’art",
+      "type": "culture",
+      "difficulty": 4,
+      "description": "Observer une œuvre et en proposer un commentaire simple mais développé.",
+      "content": [
+        { "it": "i colori dominanti", "fr": "les couleurs dominantes" },
+        { "it": "trasmette un’emozione", "fr": "cela transmet une émotion" },
+        { "it": "la composizione", "fr": "la composition" },
+        { "it": "un dettaglio significativo", "fr": "un détail significatif" },
+        { "it": "mi colpisce soprattutto", "fr": "ce qui me frappe surtout" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « la composizione » ?",
+          "options": ["la composition", "la comparaison", "la collection"],
+          "answer": "la composition"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "superlocuteur", "order": 19 }
+      ]
+    },
+    {
+      "id": "societe-2",
+      "title": "Analyser une évolution de société",
+      "type": "politique",
+      "difficulty": 5,
+      "description": "Décrire un changement social et en discuter les conséquences.",
+      "content": [
+        { "it": "negli ultimi anni", "fr": "ces dernières années" },
+        { "it": "si è diffusa l’idea che", "fr": "l’idée s’est répandue que" },
+        { "it": "ha avuto conseguenze concrete", "fr": "cela a eu des conséquences concrètes" },
+        { "it": "non tutti ne beneficiano allo stesso modo", "fr": "tout le monde n’en bénéficie pas de la même manière" },
+        { "it": "bisogna guardare al contesto", "fr": "il faut regarder le contexte" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « negli ultimi anni » ?",
+          "options": ["ces dernières années", "dans quelques années", "au siècle dernier"],
+          "answer": "ces dernières années"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "superlocuteur", "order": 14 }
+      ]
+    },
+    {
+      "id": "institutions-2",
+      "title": "Comparer des institutions",
+      "type": "politique",
+      "difficulty": 5,
+      "description": "Mettre en relation différents niveaux d’institutions et leurs rôles.",
+      "content": [
+        { "it": "a livello locale", "fr": "au niveau local" },
+        { "it": "a livello nazionale", "fr": "au niveau national" },
+        { "it": "hanno competenze diverse", "fr": "elles ont des compétences différentes" },
+        { "it": "intervengono in modo complementare", "fr": "elles interviennent de manière complémentaire" },
+        { "it": "non svolgono la stessa funzione", "fr": "elles ne remplissent pas la même fonction" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « a livello locale » ?",
+          "options": ["au niveau local", "au niveau moral", "au niveau symbolique"],
+          "answer": "au niveau local"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "superlocuteur", "order": 15 }
+      ]
+    },
+    {
+      "id": "discours-1",
+      "title": "Rapporter les paroles de quelqu’un",
+      "type": "conversation",
+      "difficulty": 5,
+      "description": "Introduire et reformuler ce qu’une autre personne a dit.",
+      "content": [
+        { "it": "mi ha detto che", "fr": "il m’a dit que" },
+        { "it": "secondo lei", "fr": "selon elle" },
+        { "it": "ha spiegato che", "fr": "il a expliqué que" },
+        { "it": "da quello che ho capito", "fr": "d’après ce que j’ai compris" },
+        { "it": "non l’ho interpretato così", "fr": "je ne l’ai pas interprété ainsi" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « il a expliqué que » ?",
+          "options": ["ha spiegato che", "ha parlato con", "ha scritto per"],
+          "answer": "ha spiegato che"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 19 },
+        { "id": "politique", "stage": "superlocuteur", "order": 16 }
+      ]
+    },
+    {
+      "id": "convaincre-1",
+      "title": "Chercher à convaincre",
+      "type": "conversation",
+      "difficulty": 5,
+      "description": "Formuler une argumentation plus stratégique et persuasive.",
+      "content": [
+        { "it": "ti faccio un esempio concreto", "fr": "je te donne un exemple concret" },
+        { "it": "questo dimostra che", "fr": "cela montre que" },
+        { "it": "non è solo una questione di opinioni", "fr": "ce n’est pas seulement une question d’opinions" },
+        { "it": "i fatti vanno considerati", "fr": "il faut prendre les faits en compte" },
+        { "it": "proprio per questo", "fr": "précisément pour cela" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « questo dimostra che » ?",
+          "options": ["cela montre que", "cela empêche que", "cela confirme peu"],
+          "answer": "cela montre que"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 20 },
+        { "id": "politique", "stage": "superlocuteur", "order": 17 }
+      ]
+    },
+    {
+      "id": "debattre-3",
+      "title": "Répondre à une objection",
+      "type": "politique",
+      "difficulty": 5,
+      "description": "Prendre en compte une critique sans perdre le fil de son argumentation.",
+      "content": [
+        { "it": "l’obiezione è legittima", "fr": "l’objection est légitime" },
+        { "it": "detto questo", "fr": "cela dit" },
+        { "it": "non cambia il problema di fondo", "fr": "cela ne change pas le problème de fond" },
+        { "it": "è un punto importante ma non sufficiente", "fr": "c’est un point important mais non suffisant" },
+        { "it": "la questione resta aperta", "fr": "la question reste ouverte" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « detto questo » ?",
+          "options": ["cela dit", "une fois écrit", "sur ce sujet"],
+          "answer": "cela dit"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "superlocuteur", "order": 18 }
+      ]
+    },
+    {
+      "id": "podcast-1",
+      "title": "Parler d’un podcast ou d’une émission",
+      "type": "culture",
+      "difficulty": 5,
+      "description": "Présenter un contenu audio, son intérêt et sa portée.",
+      "content": [
+        { "it": "affronta un tema attuale", "fr": "cela aborde un sujet actuel" },
+        { "it": "il tono è accessibile", "fr": "le ton est accessible" },
+        { "it": "gli interventi sono ben costruiti", "fr": "les interventions sont bien construites" },
+        { "it": "mi ha aiutato a capire meglio", "fr": "cela m’a aidé à mieux comprendre" },
+        { "it": "lo consiglierei a chi vuole approfondire", "fr": "je le conseillerais à quelqu’un qui veut approfondir" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « affronta un tema attuale » ?",
+          "options": ["cela aborde un sujet actuel", "cela évite un sujet complexe", "cela résume un livre ancien"],
+          "answer": "cela aborde un sujet actuel"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "superlocuteur", "order": 20 }
+      ]
+    },
+    {
+      "id": "memoire-1",
+      "title": "Évoquer un souvenir marquant",
+      "type": "conversation",
+      "difficulty": 5,
+      "description": "Raconter un souvenir avec davantage de détails et de recul.",
+      "content": [
+        { "it": "mi ricordo ancora", "fr": "je m’en souviens encore" },
+        { "it": "all’epoca", "fr": "à l’époque" },
+        { "it": "non mi rendevo conto che", "fr": "je ne me rendais pas compte que" },
+        { "it": "col senno di poi", "fr": "avec le recul" },
+        { "it": "è stato un momento decisivo", "fr": "cela a été un moment décisif" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « col senno di poi » ?",
+          "options": ["avec le recul", "sur le moment", "sans réfléchir"],
+          "answer": "avec le recul"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 21 }
+      ]
+    },
+    {
+      "id": "identite-1",
+      "title": "Parler d’identité et d’appartenance",
+      "type": "conversation",
+      "difficulty": 5,
+      "description": "Exprimer un rapport nuancé à ses origines, ses langues et ses milieux.",
+      "content": [
+        { "it": "mi sento legato a", "fr": "je me sens lié à" },
+        { "it": "faccio parte di", "fr": "je fais partie de" },
+        { "it": "non mi riconosco del tutto in", "fr": "je ne me reconnais pas entièrement dans" },
+        { "it": "la mia esperienza personale", "fr": "mon expérience personnelle" },
+        { "it": "dipende molto dal contesto in cui vivo", "fr": "cela dépend beaucoup du contexte dans lequel je vis" }
+      ],
+      "quiz": [
+        {
+          "q": "Comment dit-on « je fais partie de » ?",
+          "options": ["faccio parte di", "parlo con", "dipendo da"],
+          "answer": "faccio parte di"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 22 },
+        { "id": "culture", "stage": "superlocuteur", "order": 21 }
+      ]
+    },
+    {
+      "id": "valeurs-1",
+      "title": "Exprimer des valeurs personnelles",
+      "type": "conversation",
+      "difficulty": 5,
+      "description": "Dire ce qui compte pour soi et justifier ses priorités.",
+      "content": [
+        { "it": "do molta importanza a", "fr": "j’accorde beaucoup d’importance à" },
+        { "it": "per me conta soprattutto", "fr": "pour moi, ce qui compte surtout" },
+        { "it": "non si tratta solo di", "fr": "il ne s’agit pas seulement de" },
+        { "it": "cerco coerenza tra", "fr": "je cherche de la cohérence entre" },
+        { "it": "è un principio a cui tengo", "fr": "c’est un principe auquel je tiens" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « è un principio a cui tengo » ?",
+          "options": ["c’est un principe auquel je tiens", "c’est une habitude qui m’ennuie", "c’est une règle imposée"],
+          "answer": "c’est un principe auquel je tiens"
+        }
+      ],
+      "pathways": [
+        { "id": "rencontres", "stage": "superlocuteur", "order": 23 },
+        { "id": "politique", "stage": "superlocuteur", "order": 19 }
+      ]
+    },
+    {
+      "id": "societe-3",
+      "title": "Nuancer un diagnostic social",
+      "type": "politique",
+      "difficulty": 5,
+      "description": "Éviter les généralisations trop rapides dans l’analyse d’un phénomène social.",
+      "content": [
+        { "it": "non si può generalizzare", "fr": "on ne peut pas généraliser" },
+        { "it": "la situazione varia molto", "fr": "la situation varie beaucoup" },
+        { "it": "dipende dai gruppi sociali coinvolti", "fr": "cela dépend des groupes sociaux concernés" },
+        { "it": "il fenomeno va contestualizzato", "fr": "le phénomène doit être replacé dans son contexte" },
+        { "it": "le cause sono molteplici", "fr": "les causes sont multiples" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « le cause sono molteplici » ?",
+          "options": ["les causes sont multiples", "les conséquences sont mineures", "les faits sont incertains"],
+          "answer": "les causes sont multiples"
+        }
+      ],
+      "pathways": [
+        { "id": "politique", "stage": "superlocuteur", "order": 20 }
+      ]
+    },
+    {
+      "id": "culture-comparee-1",
+      "title": "Comparer deux références culturelles",
+      "type": "culture",
+      "difficulty": 5,
+      "description": "Mettre en regard deux œuvres, deux artistes ou deux traditions culturelles.",
+      "content": [
+        { "it": "presentano punti in comune", "fr": "ils présentent des points communs" },
+        { "it": "si distinguono per", "fr": "ils se distinguent par" },
+        { "it": "uno punta su", "fr": "l’un mise sur" },
+        { "it": "l’altro mette l’accento su", "fr": "l’autre met l’accent sur" },
+        { "it": "il confronto è interessante perché", "fr": "la comparaison est intéressante parce que" }
+      ],
+      "quiz": [
+        {
+          "q": "Que signifie « si distinguono per » ?",
+          "options": ["ils se distinguent par", "ils se confondent avec", "ils disparaissent à cause de"],
+          "answer": "ils se distinguent par"
+        }
+      ],
+      "pathways": [
+        { "id": "culture", "stage": "superlocuteur", "order": 22 }
       ]
     }
   ]
