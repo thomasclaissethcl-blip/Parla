@@ -454,12 +454,13 @@ function getVisibleLessons(query = "") {
 
   return pool.filter((lesson) => {
     const haystack = [
-      lesson.title,
-      lesson.description,
-      ...(lesson.content || []).flatMap((item) => [item.it, item.fr])
-    ]
-      .join(" ")
-      .toLowerCase();
+  lesson.title,
+  lesson.description,
+  ...(lesson.content || []).flatMap((item) => [item.it, item.fr]),
+  ...(lesson.explanations || []).flatMap((item) => [item.title, item.text])
+]
+  .join(" ")
+  .toLowerCase();
 
     return haystack.includes(query);
   });
@@ -532,7 +533,7 @@ function buildLessonContentHTML(lesson) {
     <div>
       <h3>Vocabulaire et expressions</h3>
       <div class="vocab-list">
-        ${lesson.content.map((item) => `
+        ${(lesson.content || []).map((item) => `
           <div class="vocab-item">
             <div class="vocab-it">${escapeHtml(item.it)}</div>
             <div class="vocab-fr">${escapeHtml(item.fr)}</div>
@@ -542,28 +543,51 @@ function buildLessonContentHTML(lesson) {
     </div>
   `;
 
-  const quizHtml = lesson.quiz?.length
-  ? lesson.quiz.map((q, index) => {
-      const shuffledOptions = shuffleArray(q.options);
-
-      return `
-        <div class="quiz-card">
-          <strong>Question ${index + 1}</strong>
-          <p>${escapeHtml(q.q)}</p>
-          <div class="quiz-options">
-            ${shuffledOptions.map((option) => `
-              <button class="option-btn" data-question-index="${index}" data-answer="${escapeHtml(option)}">
-                ${escapeHtml(option)}
-              </button>
-            `).join("")}
-          </div>
-          <div id="quiz-feedback-${index}" class="feedback"></div>
+  const explanationsHtml = lesson.explanations?.length
+    ? `
+      <div>
+        <h3>Explications</h3>
+        <div class="explanations-list">
+          ${lesson.explanations.map((item) => `
+            <div class="explanation-card explanation-${escapeHtml(item.type || "general")}">
+              <p class="explanation-label">${escapeHtml(item.title || "Explication")}</p>
+              <p class="explanation-text">${escapeHtml(item.text || "")}</p>
+            </div>
+          `).join("")}
         </div>
-      `;
-    }).join("")
-  : `<p class="small-text">Aucun quiz disponible pour cette leçon.</p>`;
+      </div>
+    `
+    : "";
 
-  return `${vocabHtml}<div><h3>Mini-quiz</h3>${quizHtml}</div>`;
+  const quizHtml = lesson.quiz?.length
+    ? lesson.quiz.map((q, index) => {
+        const shuffledOptions = shuffleArray(q.options);
+
+        return `
+          <div class="quiz-card">
+            <strong>Question ${index + 1}</strong>
+            <p>${escapeHtml(q.q)}</p>
+            <div class="quiz-options">
+              ${shuffledOptions.map((option) => `
+                <button class="option-btn" data-question-index="${index}" data-answer="${escapeHtml(option)}">
+                  ${escapeHtml(option)}
+                </button>
+              `).join("")}
+            </div>
+            <div id="quiz-feedback-${index}" class="feedback"></div>
+          </div>
+        `;
+      }).join("")
+    : `<p class="small-text">Aucun quiz disponible pour cette leçon.</p>`;
+
+  return `
+    ${vocabHtml}
+    ${explanationsHtml}
+    <div>
+      <h3>Mini-quiz</h3>
+      ${quizHtml}
+    </div>
+  `;
 }
 
 function attachQuizButtons(lesson) {
